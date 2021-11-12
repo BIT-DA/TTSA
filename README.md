@@ -1,12 +1,11 @@
-# Target-oriented Transferable Semantic Augmentation (TTSA)
-![](http://latex.codecogs.com/gif.latex?T^2SA})
+# Target-oriented Transferable Semantic Augmentation <img src="https://latex.codecogs.com/svg.image?T^{2}SA" title="T^{2}SA" />
 
 Pytorch Implementation for TPAMI manuscript "Adapting Across Domains via Target-oriented Transferable Semantic Augmentation under Prototype Constraint"
 
 ## Abstract
 
 We present a Target-oriented
-Transferable Semantic Augmentation (TTSA) method, which enhances the generalization ability of the classifier by training it with a
+Transferable Semantic Augmentation (<img src="https://latex.codecogs.com/svg.image?T^{2}SA" title="T^{2}SA" />) method, which enhances the generalization ability of the classifier by training it with a
 target-like augmented domain, constructed by semantically augmenting source data towards target at the feature level. Moreover, we
 achieve the augmentation implicitly by minimizing the upper bound of the expected Angular-softmax loss over the augmented domain,
 which is of high efficiency. Additionally, to further ensure that the augmented domain can imitate target domain nicely and
