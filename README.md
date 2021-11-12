@@ -43,7 +43,7 @@ DomainNet dataset can be found [here](http://ai.bu.edu/M3SDA/).
 
 ### PACS
 
-PACS dataset can be found [here]http://ai.bu.edu/M3SDA/).
+PACS dataset can be found [here](https://dali-dl.github.io/project_iccv2017.html).
 
 ## Running the code
 
@@ -52,7 +52,6 @@ In the following, we provide the training scripts for different settings.
 For unsupervised domain adaptation (UDA),
 ```
 sh TTSA.sh
-
 ```
 
 For multi-source domain adaptation (MSDA),
@@ -66,8 +65,37 @@ sh TTSA_for_DG.sh
 ```
 
 ## Acknowledgements
-Some codes are adapted from [ISDA](https://github.com/blackfeather-wang/ISDA-for-Deep-Networks), [FACT]() and 
+Some codes are adapted from [ISDA](https://github.com/blackfeather-wang/ISDA-for-Deep-Networks), [FACT](https://github.com/MediaBrain-SJTU/FACT) and 
 [Transfer-Learning-Library](https://github.com/thuml/Transfer-Learning-Library). We thank them for their excellent projects.
+```
+@inproceedings{NIPS2019_9426,
+    title = {Implicit Semantic Data Augmentation for Deep Networks},
+    author = {Wang, Yulin and Pan, Xuran and Song, Shiji and Zhang, Hong and Huang, Gao and Wu, Cheng},
+    booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+    pages = {12635--12644},
+    year = {2019},
+}
+
+@InProceedings{Xu_2021_CVPR,
+    author = {Xu, Qinwei and Zhang, Ruipeng and Zhang, Ya and Wang, Yanfeng and Tian, Qi},
+    title = {A Fourier-Based Framework for Domain Generalization},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month = {June},
+    year = {2021},
+    pages = {14383-14392}
+}
+
+@misc{dalib,
+    author = {Junguang Jiang, Baixu Chen, Bo Fu, Mingsheng Long},
+    title = {Transfer-Learning-library},
+    year = {2020},
+    publisher = {GitHub},
+    journal = {GitHub repository},
+    howpublished = {\url{https://github.com/thuml/Transfer-Learning-Library}},
+}
+
+
+```
 
 ## Contact
 If you have any problem about our code, feel free to contact
