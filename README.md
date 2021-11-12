@@ -1,4 +1,4 @@
-# Target-oriented Transferable Semantic Augmentation (T$^2$TSA)
+# Target-oriented Transferable Semantic Augmentation (TTSA)
 
 Pytorch Implementation for TPAMI manuscript "Adapting Across Domains via Target-oriented Transferable Semantic Augmentation under Prototype Constraint"
 
