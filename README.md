@@ -1,4 +1,4 @@
-# Target-oriented Transferable Semantic Augmentation <img src="https://latex.codecogs.com/svg.image?T^{2}SA" title="T^{2}SA" />
+# Target-oriented Transferable Semantic Augmentation
 
 Pytorch Implementation for TPAMI manuscript "Adapting Across Domains via Target-oriented Transferable Semantic Augmentation under Prototype Constraint"
 
