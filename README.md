@@ -1,4 +1,4 @@
-# Target-oriented Transferable Semantic Augmentation (TTSA)
+# Target-oriented Transferable Semantic Augmentation (T$^2$TSA)
 
 Pytorch Implementation for TPAMI manuscript "Adapting Across Domains via Target-oriented Transferable Semantic Augmentation under Prototype Constraint"
 
@@ -93,8 +93,6 @@ Some codes are adapted from [ISDA](https://github.com/blackfeather-wang/ISDA-for
     journal = {GitHub repository},
     howpublished = {\url{https://github.com/thuml/Transfer-Learning-Library}},
 }
-
-
 ```
 
 ## Contact
