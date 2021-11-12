@@ -1,4 +1,4 @@
-#Target-oriented Transferable Semantic Augmentation (TTSA)
+# Target-oriented Transferable Semantic Augmentation (TTSA)
 
 Pytorch Implementation for TPAMI manuscript "Adapting Across Domains via Target-oriented Transferable Semantic Augmentation under Prototype Constraint"
 
@@ -15,11 +15,15 @@ between augmented features and corresponding target prototype (i.e., average rep
 <div align=center><img src="./Figures/TTSA.png" width="100%"></div>
 
 ## Prerequisites
-The code is implemented with **CUDA 11.2**, **Python 3.7**.
-
-To install the required python packages, run
-
-```pip install -r requirements.txt```
+```
+CUDA 11.2
+Python 3.7
+torch 1.7.0+cu110
+torchvision 0.8.1+cu110
+pillow 7.2.0
+numpy
+argparse
+```
 
 ## Datasets
 
@@ -35,29 +39,34 @@ VisDA 2017 dataset can be found [here](https://github.com/VisionLearningGroup/ta
 
 ### DomainNet
 
-DomainNet dataset can be found [here](https://github.com/VisionLearningGroup/taskcv-2017-public).
+DomainNet dataset can be found [here](http://ai.bu.edu/M3SDA/).
 
+### PACS
+
+PACS dataset can be found [here]http://ai.bu.edu/M3SDA/).
 
 ## Running the code
 
-unsupervised domain adaptation (UDA)
+In the following, we provide the training scripts for different settings.
+
+For unsupervised domain adaptation (UDA),
 ```
-python3 train_TSA.py --gpu_id 4 --arch resnet50 --seed 1 --dset office --output_dir log/office31 --s_dset_path data/list/office/webcam_31.txt --t_dset_path data/list/office/amazon_31.txt --epochs 40 --iters-per-epoch 500 --lambda0 0.25 --MI 0.1
+sh TTSA.sh
 
 ```
 
-multi-source domain adaptation (MSDA)
+For multi-source domain adaptation (MSDA),
 ```
-python3 train_TSA.py --gpu_id 4 --arch resnet50 --seed 0 --dset office-home --output_dir log/office-home --s_dset_path data/list/home/Art_65.txt --t_dset_path data/list/home/Product_65.txt --epochs 40 --iters-per-epoch 500 --lambda0 0.25 --MI 0.1
+sh TTSA_for_MSDA.sh
 ```
 
-domain generalization (DG)
+For domain generalization (DG),
 ```
-python3 train_TSA.py --gpu_id 4 --arch resnet101 --seed 2 --dset visda --output_dir log/visda --s_dset_path data/list/visda2017/synthetic_12.txt --t_dset_path data/list/visda2017/real_12.txt --epochs 30 --iters-per-epoch 1000 --lambda0 0.25 --MI 0.1
+sh TTSA_for_DG.sh
 ```
 
 ## Acknowledgements
-Some codes are adapted from [ISDA](https://github.com/blackfeather-wang/ISDA-for-Deep-Networks) and 
+Some codes are adapted from [ISDA](https://github.com/blackfeather-wang/ISDA-for-Deep-Networks), [FACT]() and 
 [Transfer-Learning-Library](https://github.com/thuml/Transfer-Learning-Library). We thank them for their excellent projects.
 
 ## Contact
