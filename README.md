@@ -1,4 +1,5 @@
 # Target-oriented Transferable Semantic Augmentation (TTSA)
+![](http://latex.codecogs.com/gif.latex?\T^SA})
 
 Pytorch Implementation for TPAMI manuscript "Adapting Across Domains via Target-oriented Transferable Semantic Augmentation under Prototype Constraint"
 
