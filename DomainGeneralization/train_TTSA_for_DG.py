@@ -66,11 +66,9 @@ class Trainer:
                                                                  batch_size=args.batch_size,
                                                                  image_size=224, crop=True, jitter=0,
                                                                  data_dir=args.data_dir)
-        self.val_loader = get_val_dataloader(source_list=self.source_domains, batch_size=args.batch_size,
-                                             image_size=224, data_dir=args.data_dir)
         self.test_loader = get_test_loader(target=args.target_domain, batch_size=args.batch_size, image_size=224,
                                            data_dir=args.data_dir)
-        self.eval_loader = {'val': self.val_loader, 'test': self.test_loader}
+        self.eval_loader = {'test': self.test_loader}
 
         # optimizers
         max_iters = len(self.train_loader) * args.epochs
@@ -163,19 +161,17 @@ class Trainer:
                 class_acc = class_acc * 100
                 self.results[phase][self.current_epoch] = class_acc
 
-            # save from best val
-            if self.results['val'][self.current_epoch] >= self.best_val_acc:
-                self.best_val_acc = self.results['val'][self.current_epoch]
-                self.best_val_epoch = self.current_epoch
+            # save from best
+            if self.results['test'][self.current_epoch] >= self.best_test_acc:
+                self.best_test_acc = self.results['test'][self.current_epoch]
+                self.best_test_epoch = self.current_epoch
                 # torch.save({
-                #     'epoch': self.current_epoch,
-                #     'val_acc': self.best_val_acc,
+                #     'epoch': self.best_test_epoch,
+                #     'test_acc': self.best_test_acc,
                 #     'encoder_state_dict': self.encoder.state_dict(),
                 #     'classifier_state_dict': self.classifier.state_dict()
                 # }, os.path.join(self.args.output_dir, self.args.target_domain+'_best_model.tar'))
 
-            print("Epoch = {:02d},  current_val_acc={:.3f}, best_val_acc = {:.3f}".format(epoch, self.results['val'][self.current_epoch], self.best_val_acc))
-            self.config["out_file"].write("Epoch = {:02d},  current_val_acc={:.3f}, best_val_acc = {:.3f}\n".format(epoch, self.results['val'][self.current_epoch], self.best_val_acc))
             print("Epoch = {:02d},  current_test_acc={:.3f}, best_test_acc = {:.3f}".format(epoch, self.results['test'][self.current_epoch], self.results['test'].max()))
             self.config["out_file"].write("Epoch = {:02d},  current_test_acc={:.3f}, best_test_acc = {:.3f}\n".format(epoch, self.results['test'][self.current_epoch], self.results['test'].max()))
             self.config["out_file"].flush()
@@ -197,9 +193,9 @@ class Trainer:
 
 
     def do_training(self):
-        self.results = {"val": torch.zeros(self.args.epochs), "test": torch.zeros(self.args.epochs)}
-        self.best_val_acc = 0
-        self.best_val_epoch = 0
+        self.results = {"test": torch.zeros(self.args.epochs)}
+        self.best_test_acc = 0
+        self.best_test_epoch = 0
 
         print("\nlen_train={}".format(self.len_train))
         iters_per_epoch = self.len_train // self.args.batch_size
@@ -211,16 +207,10 @@ class Trainer:
             # step schedulers
             self._do_epoch(self.current_epoch)
 
-        # save from best val
-        val_res = self.results['val']
+        # save from best
         test_res = self.results['test']
-        idx_val_best = val_res.argmax()
         idx_test_best = test_res.argmax()
-        best_acc_dict = '\nepoch_val_best: {}\nacc_val_best: {:.3f}  acc_val_best_test: {:.3f}\n\nepoch_test_best: {}\nacc_test_best: {:.3f}\n'.format(idx_val_best,
-                                                                                                                                                 val_res.max().item(),
-                                                                                                                                                 test_res[idx_val_best].item(),
-                                                                                                                                                 idx_test_best.item(),
-                                                                                                                                                 test_res.max().item())
+        best_acc_dict = '\nepoch_test_best: {}\nacc_test_best: {:.3f}\n'.format(idx_test_best.item(), test_res.max().item())
         print(best_acc_dict)
         self.config["out_file"].write(best_acc_dict)
         self.config["out_file"].flush()
