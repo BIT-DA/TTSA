@@ -29,7 +29,7 @@ python3 train_TTSA.py --gpu_id 0 --arch resnet50 --seed 2 --dset office-home --o
 
 
 # visda
-python3 train_TTSA.py --gpu_id 0 --arch resnet101 --seed 4 --center_crop --dset visda --output_dir log/TTSA/visda --s_dset_path /data1/TL/data/list/visda2017/synthetic_12.txt --t_dset_path /data1/TL/data/list/visda2017/real_12.txt --t_test_path /data1/TL/data/list/visda2017/real_12.txt --epochs 30 --iters-per-epoch 1000 --lambda0 0.25 --lr 0.001  --gamma 0.001 --beta 0.1 --eta 0.5 --alpha 0.1 --MI 0.1
+python3 train_TTSA.py --gpu_id 0 --arch resnet101 --seed 4 --center_crop --dset visda --output_dir log/TTSA/visda --s_dset_path /data1/TL/data/list/visda2017/synthetic_12.txt --t_dset_path /data1/TL/data/list/visda2017/real_12.txt --t_test_path /data1/TL/data/list/visda2017/real_12.txt --epochs 30 --iters-per-epoch 1000 --lambda0 0.25 --lr 0.001  --gamma 0.001 --beta 0.1 --eta 0.5 --alpha 0.1
 
 
 
