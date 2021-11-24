@@ -64,6 +64,15 @@ For domain generalization (DG),
 sh TTSA_for_DG.sh
 ```
 
+## Evaluate
+
+Several pre-trained models of TTSA can be downloaded [here](https://github.com/BIT-DA/TTSA/releases) and put in <root_dir>/Checkpoint
+
+evaluate on Office-31 for UDA tasks
+```
+python3 evaluate_TTSA.py --gpu_id 2 --arch resnet50 --dset office --t_test_path data/list/office31/webcam_31.txt --weight_path Checkpoint/amazon-webcam.pth.zip
+```
+
 ## Acknowledgements
 Some codes are adapted from [ISDA](https://github.com/blackfeather-wang/ISDA-for-Deep-Networks), [FACT](https://github.com/MediaBrain-SJTU/FACT) and 
 [Transfer-Learning-Library](https://github.com/thuml/Transfer-Learning-Library). We thank them for their excellent projects.
