@@ -70,7 +70,7 @@ Several pre-trained models of TTSA can be downloaded [here](https://github.com/B
 
 evaluate on Office-31 for UDA tasks
 ```
-python3 evaluate_TTSA.py --gpu_id 2 --arch resnet50 --dset office --t_test_path data/list/office31/webcam_31.txt --weight_path ./Checkpoint/amazon-webcam.pth.zip
+python3 evaluate_TTSA.py --gpu_id 2 --arch resnet50 --dset office --t_test_path ./data/DA_list/office/webcam_31.txt --weight_path ./Checkpoint/amazon-webcam.pth.zip
 ```
 
 ## Acknowledgements
