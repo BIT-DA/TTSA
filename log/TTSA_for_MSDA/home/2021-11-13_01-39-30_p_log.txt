@@ -1,0 +1,471 @@
+file name: train_TTSA_for_MSDA
+PTL.version = 7.2.0
+torch.version = 1.7.0+cu110
+torchvision.version = 0.8.1+cu110
+arch = resnet50
+gpu_id = 0
+dset = office-home
+root = /data1/TL/data/office-home-65/
+sources = None
+target = p
+output_dir = log/TTSA_for_MSDA/home
+center_crop = False
+workers = 4
+epochs = 40
+iters_per_epoch = 1000
+print_freq = 100
+batch_size = 32
+lr = 0.01
+decay_rate = 0.75
+momentum = 0.9
+weight_decay = 0.001
+seed = 2
+alpha = 0.1
+lambda0 = 0.25
+eta = 0.5
+gamma = 0.001
+beta = 0.1
+start_test_epoch = 0
+SaveModel = False
+Epoch: [00][0/1000]	total_loss:5.011	aug_loss:4.887	 pro_loss:139.320  MI_loss:0.148
+Epoch: [00][100/1000]	total_loss:2.095	aug_loss:2.162	 pro_loss:128.063  MI_loss:1.956
+Epoch: [00][200/1000]	total_loss:1.635	aug_loss:1.732	 pro_loss:136.460  MI_loss:2.334
+Epoch: [00][300/1000]	total_loss:1.488	aug_loss:1.583	 pro_loss:133.031  MI_loss:2.280
+Epoch: [00][400/1000]	total_loss:1.159	aug_loss:1.275	 pro_loss:131.738  MI_loss:2.476
+Epoch: [00][500/1000]	total_loss:1.351	aug_loss:1.478	 pro_loss:145.782  MI_loss:2.727
+Epoch: [00][600/1000]	total_loss:1.011	aug_loss:1.084	 pro_loss:160.136  MI_loss:2.334
+Epoch: [00][700/1000]	total_loss:1.232	aug_loss:1.318	 pro_loss:145.299  MI_loss:2.321
+Epoch: [00][800/1000]	total_loss:1.733	aug_loss:1.862	 pro_loss:145.195  MI_loss:2.740
+Epoch: [00][900/1000]	total_loss:0.899	aug_loss:1.002	 pro_loss:142.374  MI_loss:2.445
+epoch = 00,  best_acc1 = 79.185, best_acc1 = 79.185
+Epoch: [01][0/1000]	total_loss:0.732	aug_loss:0.814	 pro_loss:153.361  MI_loss:2.354
+Epoch: [01][100/1000]	total_loss:1.054	aug_loss:1.162	 pro_loss:136.515  MI_loss:2.448
+Epoch: [01][200/1000]	total_loss:1.052	aug_loss:1.160	 pro_loss:151.150  MI_loss:2.589
+Epoch: [01][300/1000]	total_loss:0.597	aug_loss:0.714	 pro_loss:147.884  MI_loss:2.651
+Epoch: [01][400/1000]	total_loss:0.693	aug_loss:0.839	 pro_loss:138.130  MI_loss:2.842
+Epoch: [01][500/1000]	total_loss:1.071	aug_loss:1.161	 pro_loss:147.117  MI_loss:2.375
+Epoch: [01][600/1000]	total_loss:0.699	aug_loss:0.865	 pro_loss:122.391  MI_loss:2.885
+Epoch: [01][700/1000]	total_loss:0.875	aug_loss:0.992	 pro_loss:135.233  MI_loss:2.525
+Epoch: [01][800/1000]	total_loss:0.320	aug_loss:0.446	 pro_loss:139.023  MI_loss:2.647
+Epoch: [01][900/1000]	total_loss:0.622	aug_loss:0.744	 pro_loss:142.665  MI_loss:2.643
+epoch = 01,  best_acc1 = 80.311, best_acc1 = 80.311
+Epoch: [02][0/1000]	total_loss:0.820	aug_loss:0.959	 pro_loss:122.978  MI_loss:2.612
+Epoch: [02][100/1000]	total_loss:0.252	aug_loss:0.405	 pro_loss:118.733  MI_loss:2.712
+Epoch: [02][200/1000]	total_loss:0.456	aug_loss:0.585	 pro_loss:144.329  MI_loss:2.732
+Epoch: [02][300/1000]	total_loss:0.432	aug_loss:0.538	 pro_loss:148.343  MI_loss:2.543
+Epoch: [02][400/1000]	total_loss:0.455	aug_loss:0.580	 pro_loss:150.119  MI_loss:2.750
+Epoch: [02][500/1000]	total_loss:0.543	aug_loss:0.689	 pro_loss:128.039  MI_loss:2.743
+Epoch: [02][600/1000]	total_loss:0.365	aug_loss:0.525	 pro_loss:132.066  MI_loss:2.919
+Epoch: [02][700/1000]	total_loss:0.491	aug_loss:0.637	 pro_loss:125.932  MI_loss:2.715
+Epoch: [02][800/1000]	total_loss:0.385	aug_loss:0.518	 pro_loss:137.143  MI_loss:2.697
+Epoch: [02][900/1000]	total_loss:0.914	aug_loss:1.057	 pro_loss:133.746  MI_loss:2.768
+epoch = 02,  best_acc1 = 80.919, best_acc1 = 80.919
+Epoch: [03][0/1000]	total_loss:0.966	aug_loss:1.106	 pro_loss:131.531  MI_loss:2.716
+Epoch: [03][100/1000]	total_loss:1.117	aug_loss:1.265	 pro_loss:134.328  MI_loss:2.821
+Epoch: [03][200/1000]	total_loss:0.472	aug_loss:0.596	 pro_loss:137.241  MI_loss:2.611
+Epoch: [03][300/1000]	total_loss:0.612	aug_loss:0.737	 pro_loss:151.134  MI_loss:2.762
+Epoch: [03][400/1000]	total_loss:0.515	aug_loss:0.657	 pro_loss:141.376  MI_loss:2.826
+Epoch: [03][500/1000]	total_loss:0.707	aug_loss:0.862	 pro_loss:122.702  MI_loss:2.779
+Epoch: [03][600/1000]	total_loss:0.483	aug_loss:0.626	 pro_loss:145.749  MI_loss:2.881
+Epoch: [03][700/1000]	total_loss:0.492	aug_loss:0.624	 pro_loss:130.497  MI_loss:2.624
+Epoch: [03][800/1000]	total_loss:0.360	aug_loss:0.504	 pro_loss:136.161  MI_loss:2.801
+Epoch: [03][900/1000]	total_loss:0.524	aug_loss:0.662	 pro_loss:139.689  MI_loss:2.772
+epoch = 03,  best_acc1 = 81.122, best_acc1 = 81.122
+Epoch: [04][0/1000]	total_loss:0.248	aug_loss:0.402	 pro_loss:122.425  MI_loss:2.772
+Epoch: [04][100/1000]	total_loss:0.636	aug_loss:0.770	 pro_loss:130.521  MI_loss:2.648
+Epoch: [04][200/1000]	total_loss:0.236	aug_loss:0.371	 pro_loss:125.990  MI_loss:2.612
+Epoch: [04][300/1000]	total_loss:0.640	aug_loss:0.785	 pro_loss:131.240  MI_loss:2.764
+Epoch: [04][400/1000]	total_loss:0.391	aug_loss:0.511	 pro_loss:143.814  MI_loss:2.629
+Epoch: [04][500/1000]	total_loss:0.684	aug_loss:0.815	 pro_loss:143.525  MI_loss:2.746
+Epoch: [04][600/1000]	total_loss:0.323	aug_loss:0.472	 pro_loss:135.575  MI_loss:2.841
+Epoch: [04][700/1000]	total_loss:0.504	aug_loss:0.625	 pro_loss:132.630  MI_loss:2.537
+Epoch: [04][800/1000]	total_loss:0.493	aug_loss:0.598	 pro_loss:141.749  MI_loss:2.469
+Epoch: [04][900/1000]	total_loss:0.201	aug_loss:0.341	 pro_loss:145.319  MI_loss:2.846
+epoch = 04,  best_acc1 = 81.460, best_acc1 = 81.460
+Epoch: [05][0/1000]	total_loss:0.276	aug_loss:0.419	 pro_loss:131.938  MI_loss:2.741
+Epoch: [05][100/1000]	total_loss:0.691	aug_loss:0.827	 pro_loss:128.693  MI_loss:2.642
+Epoch: [05][200/1000]	total_loss:0.540	aug_loss:0.712	 pro_loss:111.404  MI_loss:2.834
+Epoch: [05][300/1000]	total_loss:0.336	aug_loss:0.477	 pro_loss:122.967  MI_loss:2.639
+Epoch: [05][400/1000]	total_loss:0.514	aug_loss:0.669	 pro_loss:128.116  MI_loss:2.833
+Epoch: [05][500/1000]	total_loss:0.115	aug_loss:0.227	 pro_loss:132.518  MI_loss:2.442
+Epoch: [05][600/1000]	total_loss:0.246	aug_loss:0.421	 pro_loss:107.232  MI_loss:2.826
+Epoch: [05][700/1000]	total_loss:0.323	aug_loss:0.505	 pro_loss:117.751  MI_loss:2.991
+Epoch: [05][800/1000]	total_loss:0.077	aug_loss:0.218	 pro_loss:131.705  MI_loss:2.726
+Epoch: [05][900/1000]	total_loss:0.273	aug_loss:0.443	 pro_loss:120.086  MI_loss:2.902
+epoch = 05,  best_acc1 = 82.248, best_acc1 = 82.248
+Epoch: [06][0/1000]	total_loss:0.341	aug_loss:0.508	 pro_loss:115.833  MI_loss:2.829
+Epoch: [06][100/1000]	total_loss:0.619	aug_loss:0.762	 pro_loss:126.726  MI_loss:2.691
+Epoch: [06][200/1000]	total_loss:0.540	aug_loss:0.657	 pro_loss:136.613  MI_loss:2.536
+Epoch: [06][300/1000]	total_loss:0.315	aug_loss:0.435	 pro_loss:129.602  MI_loss:2.500
+Epoch: [06][400/1000]	total_loss:0.401	aug_loss:0.547	 pro_loss:120.149  MI_loss:2.663
+Epoch: [06][500/1000]	total_loss:0.478	aug_loss:0.581	 pro_loss:139.579  MI_loss:2.424
+Epoch: [06][600/1000]	total_loss:0.055	aug_loss:0.201	 pro_loss:112.680  MI_loss:2.584
+Epoch: [06][700/1000]	total_loss:0.192	aug_loss:0.351	 pro_loss:117.756  MI_loss:2.767
+Epoch: [06][800/1000]	total_loss:0.480	aug_loss:0.619	 pro_loss:132.699  MI_loss:2.712
+Epoch: [06][900/1000]	total_loss:0.346	aug_loss:0.469	 pro_loss:130.965  MI_loss:2.544
+epoch = 06,  best_acc1 = 82.902, best_acc1 = 82.902
+Epoch: [07][0/1000]	total_loss:-0.010	aug_loss:0.133	 pro_loss:125.225  MI_loss:2.685
+Epoch: [07][100/1000]	total_loss:0.506	aug_loss:0.681	 pro_loss:107.901  MI_loss:2.829
+Epoch: [07][200/1000]	total_loss:0.190	aug_loss:0.360	 pro_loss:115.036  MI_loss:2.842
+Epoch: [07][300/1000]	total_loss:0.255	aug_loss:0.403	 pro_loss:129.510  MI_loss:2.776
+Epoch: [07][400/1000]	total_loss:0.423	aug_loss:0.558	 pro_loss:132.065  MI_loss:2.670
+Epoch: [07][500/1000]	total_loss:0.212	aug_loss:0.370	 pro_loss:121.955  MI_loss:2.801
+Epoch: [07][600/1000]	total_loss:0.321	aug_loss:0.488	 pro_loss:106.974  MI_loss:2.742
+Epoch: [07][700/1000]	total_loss:0.103	aug_loss:0.284	 pro_loss:121.632  MI_loss:3.028
+Epoch: [07][800/1000]	total_loss:0.398	aug_loss:0.556	 pro_loss:113.555  MI_loss:2.719
+Epoch: [07][900/1000]	total_loss:0.152	aug_loss:0.305	 pro_loss:126.453  MI_loss:2.798
+epoch = 07,  best_acc1 = 82.902, best_acc1 = 82.902
+Epoch: [08][0/1000]	total_loss:0.357	aug_loss:0.513	 pro_loss:126.959  MI_loss:2.829
+Epoch: [08][100/1000]	total_loss:0.197	aug_loss:0.377	 pro_loss:115.136  MI_loss:2.949
+Epoch: [08][200/1000]	total_loss:0.596	aug_loss:0.763	 pro_loss:120.113  MI_loss:2.877
+Epoch: [08][300/1000]	total_loss:0.531	aug_loss:0.677	 pro_loss:119.304  MI_loss:2.651
+Epoch: [08][400/1000]	total_loss:0.247	aug_loss:0.358	 pro_loss:133.436  MI_loss:2.449
+Epoch: [08][500/1000]	total_loss:0.213	aug_loss:0.342	 pro_loss:124.700  MI_loss:2.535
+Epoch: [08][600/1000]	total_loss:0.434	aug_loss:0.571	 pro_loss:124.339  MI_loss:2.613
+Epoch: [08][700/1000]	total_loss:0.202	aug_loss:0.370	 pro_loss:111.103  MI_loss:2.792
+Epoch: [08][800/1000]	total_loss:0.467	aug_loss:0.612	 pro_loss:120.531  MI_loss:2.656
+Epoch: [08][900/1000]	total_loss:0.156	aug_loss:0.339	 pro_loss:108.968  MI_loss:2.925
+epoch = 08,  best_acc1 = 83.014, best_acc1 = 83.014
+Epoch: [09][0/1000]	total_loss:0.149	aug_loss:0.309	 pro_loss:111.553  MI_loss:2.719
+Epoch: [09][100/1000]	total_loss:0.452	aug_loss:0.648	 pro_loss:111.793  MI_loss:3.080
+Epoch: [09][200/1000]	total_loss:0.202	aug_loss:0.382	 pro_loss:104.106  MI_loss:2.840
+Epoch: [09][300/1000]	total_loss:0.263	aug_loss:0.430	 pro_loss:120.962  MI_loss:2.878
+Epoch: [09][400/1000]	total_loss:0.080	aug_loss:0.234	 pro_loss:126.421  MI_loss:2.807
+Epoch: [09][500/1000]	total_loss:0.205	aug_loss:0.377	 pro_loss:114.289  MI_loss:2.862
+Epoch: [09][600/1000]	total_loss:-0.061	aug_loss:0.078	 pro_loss:125.856  MI_loss:2.653
+Epoch: [09][700/1000]	total_loss:0.372	aug_loss:0.539	 pro_loss:117.538  MI_loss:2.838
+Epoch: [09][800/1000]	total_loss:0.437	aug_loss:0.611	 pro_loss:101.523  MI_loss:2.758
+Epoch: [09][900/1000]	total_loss:0.354	aug_loss:0.496	 pro_loss:128.565  MI_loss:2.705
+epoch = 09,  best_acc1 = 82.947, best_acc1 = 83.014
+Epoch: [10][0/1000]	total_loss:0.715	aug_loss:0.877	 pro_loss:113.552  MI_loss:2.756
+Epoch: [10][100/1000]	total_loss:0.148	aug_loss:0.302	 pro_loss:121.229  MI_loss:2.747
+Epoch: [10][200/1000]	total_loss:0.216	aug_loss:0.406	 pro_loss:104.929  MI_loss:2.953
+Epoch: [10][300/1000]	total_loss:0.165	aug_loss:0.312	 pro_loss:114.836  MI_loss:2.621
+Epoch: [10][400/1000]	total_loss:0.025	aug_loss:0.205	 pro_loss:114.537  MI_loss:2.954
+Epoch: [10][500/1000]	total_loss:0.187	aug_loss:0.351	 pro_loss:117.450  MI_loss:2.813
+Epoch: [10][600/1000]	total_loss:0.153	aug_loss:0.320	 pro_loss:113.539  MI_loss:2.805
+Epoch: [10][700/1000]	total_loss:0.298	aug_loss:0.457	 pro_loss:108.380  MI_loss:2.672
+Epoch: [10][800/1000]	total_loss:0.259	aug_loss:0.409	 pro_loss:119.868  MI_loss:2.703
+Epoch: [10][900/1000]	total_loss:0.010	aug_loss:0.195	 pro_loss:102.733  MI_loss:2.876
+epoch = 10,  best_acc1 = 83.239, best_acc1 = 83.239
+Epoch: [11][0/1000]	total_loss:0.285	aug_loss:0.489	 pro_loss:94.649  MI_loss:2.984
+Epoch: [11][100/1000]	total_loss:0.089	aug_loss:0.234	 pro_loss:128.629  MI_loss:2.737
+Epoch: [11][200/1000]	total_loss:0.099	aug_loss:0.244	 pro_loss:119.025  MI_loss:2.645
+Epoch: [11][300/1000]	total_loss:0.064	aug_loss:0.269	 pro_loss:99.120  MI_loss:3.044
+Epoch: [11][400/1000]	total_loss:0.237	aug_loss:0.413	 pro_loss:99.040  MI_loss:2.756
+Epoch: [11][500/1000]	total_loss:0.177	aug_loss:0.358	 pro_loss:110.901  MI_loss:2.920
+Epoch: [11][600/1000]	total_loss:0.541	aug_loss:0.721	 pro_loss:115.481  MI_loss:2.961
+Epoch: [11][700/1000]	total_loss:-0.067	aug_loss:0.101	 pro_loss:112.132  MI_loss:2.800
+Epoch: [11][800/1000]	total_loss:0.105	aug_loss:0.292	 pro_loss:108.517  MI_loss:2.952
+Epoch: [11][900/1000]	total_loss:0.067	aug_loss:0.216	 pro_loss:118.908  MI_loss:2.672
+epoch = 11,  best_acc1 = 83.420, best_acc1 = 83.420
+Epoch: [12][0/1000]	total_loss:0.060	aug_loss:0.226	 pro_loss:107.745  MI_loss:2.739
+Epoch: [12][100/1000]	total_loss:0.064	aug_loss:0.216	 pro_loss:123.809  MI_loss:2.760
+Epoch: [12][200/1000]	total_loss:0.271	aug_loss:0.420	 pro_loss:116.530  MI_loss:2.659
+Epoch: [12][300/1000]	total_loss:0.412	aug_loss:0.588	 pro_loss:112.701  MI_loss:2.892
+Epoch: [12][400/1000]	total_loss:0.357	aug_loss:0.516	 pro_loss:110.177  MI_loss:2.694
+Epoch: [12][500/1000]	total_loss:0.242	aug_loss:0.427	 pro_loss:101.797  MI_loss:2.863
+Epoch: [12][600/1000]	total_loss:0.012	aug_loss:0.207	 pro_loss:101.798  MI_loss:2.974
+Epoch: [12][700/1000]	total_loss:0.111	aug_loss:0.261	 pro_loss:117.299  MI_loss:2.678
+Epoch: [12][800/1000]	total_loss:0.312	aug_loss:0.479	 pro_loss:108.516  MI_loss:2.753
+Epoch: [12][900/1000]	total_loss:0.291	aug_loss:0.473	 pro_loss:108.654  MI_loss:2.908
+epoch = 12,  best_acc1 = 83.667, best_acc1 = 83.667
+Epoch: [13][0/1000]	total_loss:0.093	aug_loss:0.275	 pro_loss:105.203  MI_loss:2.867
+Epoch: [13][100/1000]	total_loss:0.369	aug_loss:0.561	 pro_loss:98.453  MI_loss:2.900
+Epoch: [13][200/1000]	total_loss:0.025	aug_loss:0.213	 pro_loss:106.931  MI_loss:2.951
+Epoch: [13][300/1000]	total_loss:0.152	aug_loss:0.321	 pro_loss:97.896  MI_loss:2.670
+Epoch: [13][400/1000]	total_loss:0.253	aug_loss:0.403	 pro_loss:116.202  MI_loss:2.668
+Epoch: [13][500/1000]	total_loss:0.448	aug_loss:0.626	 pro_loss:105.306  MI_loss:2.833
+Epoch: [13][600/1000]	total_loss:0.121	aug_loss:0.306	 pro_loss:105.758  MI_loss:2.910
+Epoch: [13][700/1000]	total_loss:0.269	aug_loss:0.437	 pro_loss:105.503  MI_loss:2.732
+Epoch: [13][800/1000]	total_loss:0.051	aug_loss:0.236	 pro_loss:97.765  MI_loss:2.821
+Epoch: [13][900/1000]	total_loss:0.146	aug_loss:0.332	 pro_loss:107.073  MI_loss:2.927
+epoch = 13,  best_acc1 = 83.938, best_acc1 = 83.938
+Epoch: [14][0/1000]	total_loss:0.011	aug_loss:0.200	 pro_loss:110.022  MI_loss:2.987
+Epoch: [14][100/1000]	total_loss:0.429	aug_loss:0.589	 pro_loss:116.027  MI_loss:2.755
+Epoch: [14][200/1000]	total_loss:0.218	aug_loss:0.420	 pro_loss:93.898  MI_loss:2.959
+Epoch: [14][300/1000]	total_loss:-0.092	aug_loss:0.080	 pro_loss:92.815  MI_loss:2.653
+Epoch: [14][400/1000]	total_loss:0.303	aug_loss:0.447	 pro_loss:121.275  MI_loss:2.654
+Epoch: [14][500/1000]	total_loss:-0.067	aug_loss:0.084	 pro_loss:114.346  MI_loss:2.647
+Epoch: [14][600/1000]	total_loss:0.099	aug_loss:0.269	 pro_loss:112.625  MI_loss:2.825
+Epoch: [14][700/1000]	total_loss:0.024	aug_loss:0.197	 pro_loss:99.925  MI_loss:2.731
+Epoch: [14][800/1000]	total_loss:0.322	aug_loss:0.458	 pro_loss:117.149  MI_loss:2.532
+Epoch: [14][900/1000]	total_loss:0.214	aug_loss:0.387	 pro_loss:106.932  MI_loss:2.800
+epoch = 14,  best_acc1 = 83.645, best_acc1 = 83.938
+Epoch: [15][0/1000]	total_loss:-0.052	aug_loss:0.142	 pro_loss:99.977  MI_loss:2.934
+Epoch: [15][100/1000]	total_loss:0.105	aug_loss:0.291	 pro_loss:99.812  MI_loss:2.859
+Epoch: [15][200/1000]	total_loss:0.055	aug_loss:0.229	 pro_loss:112.140  MI_loss:2.863
+Epoch: [15][300/1000]	total_loss:0.036	aug_loss:0.213	 pro_loss:101.593  MI_loss:2.791
+Epoch: [15][400/1000]	total_loss:0.202	aug_loss:0.386	 pro_loss:97.023  MI_loss:2.810
+Epoch: [15][500/1000]	total_loss:0.253	aug_loss:0.401	 pro_loss:112.761  MI_loss:2.613
+Epoch: [15][600/1000]	total_loss:0.321	aug_loss:0.496	 pro_loss:102.743  MI_loss:2.781
+Epoch: [15][700/1000]	total_loss:-0.033	aug_loss:0.164	 pro_loss:101.819  MI_loss:2.984
+Epoch: [15][800/1000]	total_loss:0.126	aug_loss:0.299	 pro_loss:101.841  MI_loss:2.749
+Epoch: [15][900/1000]	total_loss:0.001	aug_loss:0.186	 pro_loss:96.104  MI_loss:2.819
+epoch = 15,  best_acc1 = 83.758, best_acc1 = 83.938
+Epoch: [16][0/1000]	total_loss:0.094	aug_loss:0.295	 pro_loss:92.490  MI_loss:2.931
+Epoch: [16][100/1000]	total_loss:0.059	aug_loss:0.250	 pro_loss:107.974  MI_loss:2.995
+Epoch: [16][200/1000]	total_loss:0.452	aug_loss:0.639	 pro_loss:106.252  MI_loss:2.936
+Epoch: [16][300/1000]	total_loss:-0.098	aug_loss:0.105	 pro_loss:92.890  MI_loss:2.957
+Epoch: [16][400/1000]	total_loss:0.137	aug_loss:0.310	 pro_loss:106.210  MI_loss:2.797
+Epoch: [16][500/1000]	total_loss:0.598	aug_loss:0.785	 pro_loss:96.854  MI_loss:2.836
+Epoch: [16][600/1000]	total_loss:0.394	aug_loss:0.589	 pro_loss:88.128  MI_loss:2.824
+Epoch: [16][700/1000]	total_loss:0.110	aug_loss:0.283	 pro_loss:103.293  MI_loss:2.754
+Epoch: [16][800/1000]	total_loss:0.155	aug_loss:0.366	 pro_loss:85.412  MI_loss:2.969
+Epoch: [16][900/1000]	total_loss:0.159	aug_loss:0.346	 pro_loss:106.215  MI_loss:2.932
+epoch = 16,  best_acc1 = 83.577, best_acc1 = 83.938
+Epoch: [17][0/1000]	total_loss:0.146	aug_loss:0.360	 pro_loss:100.255  MI_loss:3.141
+Epoch: [17][100/1000]	total_loss:-0.085	aug_loss:0.101	 pro_loss:107.193  MI_loss:2.924
+Epoch: [17][200/1000]	total_loss:0.018	aug_loss:0.191	 pro_loss:111.081  MI_loss:2.846
+Epoch: [17][300/1000]	total_loss:0.153	aug_loss:0.332	 pro_loss:105.327  MI_loss:2.840
+Epoch: [17][400/1000]	total_loss:0.115	aug_loss:0.323	 pro_loss:103.466  MI_loss:3.110
+Epoch: [17][500/1000]	total_loss:0.276	aug_loss:0.468	 pro_loss:94.569  MI_loss:2.867
+Epoch: [17][600/1000]	total_loss:-0.079	aug_loss:0.078	 pro_loss:98.982  MI_loss:2.562
+Epoch: [17][700/1000]	total_loss:-0.045	aug_loss:0.137	 pro_loss:107.633  MI_loss:2.898
+Epoch: [17][800/1000]	total_loss:-0.011	aug_loss:0.185	 pro_loss:95.197  MI_loss:2.907
+Epoch: [17][900/1000]	total_loss:0.021	aug_loss:0.187	 pro_loss:101.802  MI_loss:2.680
+epoch = 17,  best_acc1 = 83.758, best_acc1 = 83.938
+Epoch: [18][0/1000]	total_loss:0.108	aug_loss:0.301	 pro_loss:87.667  MI_loss:2.803
+Epoch: [18][100/1000]	total_loss:0.218	aug_loss:0.382	 pro_loss:104.751  MI_loss:2.684
+Epoch: [18][200/1000]	total_loss:0.394	aug_loss:0.591	 pro_loss:102.685  MI_loss:3.001
+Epoch: [18][300/1000]	total_loss:-0.130	aug_loss:0.078	 pro_loss:89.686  MI_loss:2.980
+Epoch: [18][400/1000]	total_loss:0.260	aug_loss:0.451	 pro_loss:98.356  MI_loss:2.895
+Epoch: [18][500/1000]	total_loss:-0.003	aug_loss:0.180	 pro_loss:94.481  MI_loss:2.776
+Epoch: [18][600/1000]	total_loss:0.265	aug_loss:0.408	 pro_loss:103.930  MI_loss:2.470
+Epoch: [18][700/1000]	total_loss:-0.069	aug_loss:0.120	 pro_loss:99.800  MI_loss:2.894
+Epoch: [18][800/1000]	total_loss:-0.051	aug_loss:0.120	 pro_loss:108.274  MI_loss:2.795
+Epoch: [18][900/1000]	total_loss:0.207	aug_loss:0.392	 pro_loss:108.987  MI_loss:2.938
+epoch = 18,  best_acc1 = 83.713, best_acc1 = 83.938
+Epoch: [19][0/1000]	total_loss:0.052	aug_loss:0.243	 pro_loss:103.118  MI_loss:2.933
+Epoch: [19][100/1000]	total_loss:-0.024	aug_loss:0.169	 pro_loss:100.456  MI_loss:2.926
+Epoch: [19][200/1000]	total_loss:0.183	aug_loss:0.374	 pro_loss:108.744  MI_loss:3.001
+Epoch: [19][300/1000]	total_loss:0.209	aug_loss:0.404	 pro_loss:98.525  MI_loss:2.931
+Epoch: [19][400/1000]	total_loss:0.122	aug_loss:0.292	 pro_loss:104.315  MI_loss:2.749
+Epoch: [19][500/1000]	total_loss:0.327	aug_loss:0.518	 pro_loss:107.797  MI_loss:2.989
+Epoch: [19][600/1000]	total_loss:0.178	aug_loss:0.328	 pro_loss:112.616  MI_loss:2.627
+Epoch: [19][700/1000]	total_loss:0.168	aug_loss:0.376	 pro_loss:99.410  MI_loss:3.068
+Epoch: [19][800/1000]	total_loss:0.127	aug_loss:0.319	 pro_loss:96.586  MI_loss:2.878
+Epoch: [19][900/1000]	total_loss:0.017	aug_loss:0.208	 pro_loss:101.092  MI_loss:2.923
+epoch = 19,  best_acc1 = 83.645, best_acc1 = 83.938
+Epoch: [20][0/1000]	total_loss:-0.031	aug_loss:0.144	 pro_loss:107.542  MI_loss:2.819
+Epoch: [20][100/1000]	total_loss:-0.041	aug_loss:0.121	 pro_loss:105.475  MI_loss:2.672
+Epoch: [20][200/1000]	total_loss:0.104	aug_loss:0.285	 pro_loss:99.643  MI_loss:2.799
+Epoch: [20][300/1000]	total_loss:0.172	aug_loss:0.347	 pro_loss:103.618  MI_loss:2.779
+Epoch: [20][400/1000]	total_loss:-0.023	aug_loss:0.149	 pro_loss:102.679  MI_loss:2.740
+Epoch: [20][500/1000]	total_loss:0.073	aug_loss:0.271	 pro_loss:87.479  MI_loss:2.860
+Epoch: [20][600/1000]	total_loss:0.115	aug_loss:0.308	 pro_loss:102.496  MI_loss:2.957
+Epoch: [20][700/1000]	total_loss:0.267	aug_loss:0.447	 pro_loss:108.116  MI_loss:2.883
+Epoch: [20][800/1000]	total_loss:0.186	aug_loss:0.389	 pro_loss:94.036  MI_loss:2.963
+Epoch: [20][900/1000]	total_loss:0.284	aug_loss:0.471	 pro_loss:98.362  MI_loss:2.855
+epoch = 20,  best_acc1 = 84.028, best_acc1 = 84.028
+Epoch: [21][0/1000]	total_loss:0.348	aug_loss:0.544	 pro_loss:96.021  MI_loss:2.914
+Epoch: [21][100/1000]	total_loss:0.010	aug_loss:0.197	 pro_loss:99.115  MI_loss:2.859
+Epoch: [21][200/1000]	total_loss:0.135	aug_loss:0.324	 pro_loss:99.826  MI_loss:2.890
+Epoch: [21][300/1000]	total_loss:0.026	aug_loss:0.208	 pro_loss:98.971  MI_loss:2.816
+Epoch: [21][400/1000]	total_loss:0.427	aug_loss:0.591	 pro_loss:108.349  MI_loss:2.728
+Epoch: [21][500/1000]	total_loss:0.268	aug_loss:0.460	 pro_loss:94.582  MI_loss:2.861
+Epoch: [21][600/1000]	total_loss:0.061	aug_loss:0.252	 pro_loss:94.648  MI_loss:2.856
+Epoch: [21][700/1000]	total_loss:0.003	aug_loss:0.188	 pro_loss:105.406  MI_loss:2.903
+Epoch: [21][800/1000]	total_loss:-0.047	aug_loss:0.156	 pro_loss:91.022  MI_loss:2.945
+Epoch: [21][900/1000]	total_loss:0.394	aug_loss:0.578	 pro_loss:93.495  MI_loss:2.772
+epoch = 21,  best_acc1 = 83.893, best_acc1 = 84.028
+Epoch: [22][0/1000]	total_loss:0.148	aug_loss:0.345	 pro_loss:94.699  MI_loss:2.917
+Epoch: [22][100/1000]	total_loss:0.143	aug_loss:0.322	 pro_loss:96.650  MI_loss:2.753
+Epoch: [22][200/1000]	total_loss:-0.042	aug_loss:0.152	 pro_loss:98.280  MI_loss:2.923
+Epoch: [22][300/1000]	total_loss:0.374	aug_loss:0.548	 pro_loss:102.526  MI_loss:2.766
+Epoch: [22][400/1000]	total_loss:-0.028	aug_loss:0.139	 pro_loss:103.971  MI_loss:2.709
+Epoch: [22][500/1000]	total_loss:0.016	aug_loss:0.205	 pro_loss:91.363  MI_loss:2.803
+Epoch: [22][600/1000]	total_loss:0.148	aug_loss:0.345	 pro_loss:90.723  MI_loss:2.877
+Epoch: [22][700/1000]	total_loss:0.151	aug_loss:0.343	 pro_loss:101.488  MI_loss:2.938
+Epoch: [22][800/1000]	total_loss:0.455	aug_loss:0.652	 pro_loss:98.794  MI_loss:2.958
+Epoch: [22][900/1000]	total_loss:0.011	aug_loss:0.212	 pro_loss:98.372  MI_loss:2.992
+epoch = 22,  best_acc1 = 83.758, best_acc1 = 84.028
+Epoch: [23][0/1000]	total_loss:0.406	aug_loss:0.587	 pro_loss:97.175  MI_loss:2.782
+Epoch: [23][100/1000]	total_loss:0.014	aug_loss:0.195	 pro_loss:104.765  MI_loss:2.862
+Epoch: [23][200/1000]	total_loss:0.107	aug_loss:0.301	 pro_loss:101.628  MI_loss:2.949
+Epoch: [23][300/1000]	total_loss:0.212	aug_loss:0.411	 pro_loss:93.819  MI_loss:2.933
+Epoch: [23][400/1000]	total_loss:-0.087	aug_loss:0.107	 pro_loss:99.865  MI_loss:2.941
+Epoch: [23][500/1000]	total_loss:0.129	aug_loss:0.313	 pro_loss:105.921  MI_loss:2.899
+Epoch: [23][600/1000]	total_loss:0.156	aug_loss:0.367	 pro_loss:88.282  MI_loss:2.986
+Epoch: [23][700/1000]	total_loss:0.046	aug_loss:0.241	 pro_loss:86.788  MI_loss:2.811
+Epoch: [23][800/1000]	total_loss:0.366	aug_loss:0.565	 pro_loss:94.516  MI_loss:2.935
+Epoch: [23][900/1000]	total_loss:-0.012	aug_loss:0.188	 pro_loss:104.423  MI_loss:3.050
+epoch = 23,  best_acc1 = 84.028, best_acc1 = 84.028
+Epoch: [24][0/1000]	total_loss:0.207	aug_loss:0.370	 pro_loss:100.365  MI_loss:2.628
+Epoch: [24][100/1000]	total_loss:-0.108	aug_loss:0.097	 pro_loss:89.762  MI_loss:2.940
+Epoch: [24][200/1000]	total_loss:0.283	aug_loss:0.472	 pro_loss:102.742  MI_loss:2.915
+Epoch: [24][300/1000]	total_loss:-0.074	aug_loss:0.136	 pro_loss:90.968  MI_loss:3.008
+Epoch: [24][400/1000]	total_loss:0.041	aug_loss:0.246	 pro_loss:100.138  MI_loss:3.056
+Epoch: [24][500/1000]	total_loss:-0.061	aug_loss:0.150	 pro_loss:88.208  MI_loss:2.989
+Epoch: [24][600/1000]	total_loss:0.050	aug_loss:0.238	 pro_loss:103.065  MI_loss:2.909
+Epoch: [24][700/1000]	total_loss:-0.044	aug_loss:0.123	 pro_loss:107.957  MI_loss:2.741
+Epoch: [24][800/1000]	total_loss:0.038	aug_loss:0.226	 pro_loss:91.471  MI_loss:2.801
+Epoch: [24][900/1000]	total_loss:0.037	aug_loss:0.216	 pro_loss:96.616  MI_loss:2.754
+epoch = 24,  best_acc1 = 83.893, best_acc1 = 84.028
+Epoch: [25][0/1000]	total_loss:-0.154	aug_loss:0.054	 pro_loss:100.334  MI_loss:3.076
+Epoch: [25][100/1000]	total_loss:0.072	aug_loss:0.243	 pro_loss:103.541  MI_loss:2.748
+Epoch: [25][200/1000]	total_loss:0.044	aug_loss:0.240	 pro_loss:101.020  MI_loss:2.976
+Epoch: [25][300/1000]	total_loss:-0.039	aug_loss:0.157	 pro_loss:99.035  MI_loss:2.946
+Epoch: [25][400/1000]	total_loss:-0.147	aug_loss:0.042	 pro_loss:93.803  MI_loss:2.827
+Epoch: [25][500/1000]	total_loss:0.021	aug_loss:0.211	 pro_loss:99.443  MI_loss:2.897
+Epoch: [25][600/1000]	total_loss:-0.140	aug_loss:0.038	 pro_loss:111.811  MI_loss:2.900
+Epoch: [25][700/1000]	total_loss:0.225	aug_loss:0.400	 pro_loss:101.262  MI_loss:2.761
+Epoch: [25][800/1000]	total_loss:0.227	aug_loss:0.461	 pro_loss:80.554  MI_loss:3.144
+Epoch: [25][900/1000]	total_loss:-0.013	aug_loss:0.145	 pro_loss:108.613  MI_loss:2.668
+epoch = 25,  best_acc1 = 83.915, best_acc1 = 84.028
+Epoch: [26][0/1000]	total_loss:0.523	aug_loss:0.740	 pro_loss:95.215  MI_loss:3.125
+Epoch: [26][100/1000]	total_loss:-0.118	aug_loss:0.079	 pro_loss:97.412  MI_loss:2.947
+Epoch: [26][200/1000]	total_loss:0.038	aug_loss:0.217	 pro_loss:100.141  MI_loss:2.792
+Epoch: [26][300/1000]	total_loss:0.111	aug_loss:0.255	 pro_loss:108.728  MI_loss:2.531
+Epoch: [26][400/1000]	total_loss:0.002	aug_loss:0.203	 pro_loss:94.964  MI_loss:2.960
+Epoch: [26][500/1000]	total_loss:0.169	aug_loss:0.340	 pro_loss:100.935  MI_loss:2.728
+Epoch: [26][600/1000]	total_loss:-0.054	aug_loss:0.105	 pro_loss:112.136  MI_loss:2.717
+Epoch: [26][700/1000]	total_loss:0.164	aug_loss:0.341	 pro_loss:90.152  MI_loss:2.673
+Epoch: [26][800/1000]	total_loss:-0.142	aug_loss:0.059	 pro_loss:93.206  MI_loss:2.945
+Epoch: [26][900/1000]	total_loss:0.275	aug_loss:0.498	 pro_loss:90.375  MI_loss:3.128
+epoch = 26,  best_acc1 = 84.118, best_acc1 = 84.118
+Epoch: [27][0/1000]	total_loss:0.066	aug_loss:0.249	 pro_loss:103.080  MI_loss:2.864
+Epoch: [27][100/1000]	total_loss:-0.065	aug_loss:0.138	 pro_loss:94.652  MI_loss:2.979
+Epoch: [27][200/1000]	total_loss:-0.092	aug_loss:0.142	 pro_loss:77.897  MI_loss:3.122
+Epoch: [27][300/1000]	total_loss:0.188	aug_loss:0.391	 pro_loss:103.703  MI_loss:3.059
+Epoch: [27][400/1000]	total_loss:-0.013	aug_loss:0.208	 pro_loss:91.979  MI_loss:3.130
+Epoch: [27][500/1000]	total_loss:0.021	aug_loss:0.235	 pro_loss:91.249  MI_loss:3.047
+Epoch: [27][600/1000]	total_loss:0.052	aug_loss:0.235	 pro_loss:98.945  MI_loss:2.819
+Epoch: [27][700/1000]	total_loss:0.146	aug_loss:0.322	 pro_loss:101.548  MI_loss:2.776
+Epoch: [27][800/1000]	total_loss:0.140	aug_loss:0.338	 pro_loss:96.955  MI_loss:2.950
+Epoch: [27][900/1000]	total_loss:0.016	aug_loss:0.218	 pro_loss:94.082  MI_loss:2.957
+epoch = 27,  best_acc1 = 84.186, best_acc1 = 84.186
+Epoch: [28][0/1000]	total_loss:-0.101	aug_loss:0.095	 pro_loss:90.454  MI_loss:2.861
+Epoch: [28][100/1000]	total_loss:0.522	aug_loss:0.738	 pro_loss:92.933  MI_loss:3.093
+Epoch: [28][200/1000]	total_loss:-0.119	aug_loss:0.121	 pro_loss:77.254  MI_loss:3.170
+Epoch: [28][300/1000]	total_loss:0.001	aug_loss:0.213	 pro_loss:88.558  MI_loss:3.008
+Epoch: [28][400/1000]	total_loss:-0.004	aug_loss:0.177	 pro_loss:96.915  MI_loss:2.778
+Epoch: [28][500/1000]	total_loss:0.028	aug_loss:0.228	 pro_loss:99.250  MI_loss:2.986
+Epoch: [28][600/1000]	total_loss:0.171	aug_loss:0.372	 pro_loss:84.928  MI_loss:2.859
+Epoch: [28][700/1000]	total_loss:0.225	aug_loss:0.420	 pro_loss:98.319  MI_loss:2.928
+Epoch: [28][800/1000]	total_loss:-0.090	aug_loss:0.102	 pro_loss:104.836  MI_loss:2.972
+Epoch: [28][900/1000]	total_loss:0.072	aug_loss:0.290	 pro_loss:94.105  MI_loss:3.119
+epoch = 28,  best_acc1 = 83.893, best_acc1 = 84.186
+Epoch: [29][0/1000]	total_loss:0.144	aug_loss:0.350	 pro_loss:80.059  MI_loss:2.868
+Epoch: [29][100/1000]	total_loss:0.233	aug_loss:0.439	 pro_loss:87.305  MI_loss:2.936
+Epoch: [29][200/1000]	total_loss:-0.097	aug_loss:0.103	 pro_loss:85.368  MI_loss:2.847
+Epoch: [29][300/1000]	total_loss:0.056	aug_loss:0.252	 pro_loss:99.404  MI_loss:2.953
+Epoch: [29][400/1000]	total_loss:0.314	aug_loss:0.521	 pro_loss:86.239  MI_loss:2.931
+Epoch: [29][500/1000]	total_loss:-0.077	aug_loss:0.151	 pro_loss:87.675  MI_loss:3.156
+Epoch: [29][600/1000]	total_loss:0.140	aug_loss:0.343	 pro_loss:92.764  MI_loss:2.961
+Epoch: [29][700/1000]	total_loss:0.049	aug_loss:0.254	 pro_loss:89.564  MI_loss:2.942
+Epoch: [29][800/1000]	total_loss:-0.091	aug_loss:0.109	 pro_loss:91.091  MI_loss:2.909
+Epoch: [29][900/1000]	total_loss:0.611	aug_loss:0.805	 pro_loss:98.369  MI_loss:2.928
+epoch = 29,  best_acc1 = 84.141, best_acc1 = 84.186
+Epoch: [30][0/1000]	total_loss:0.039	aug_loss:0.254	 pro_loss:88.059  MI_loss:3.030
+Epoch: [30][100/1000]	total_loss:0.047	aug_loss:0.248	 pro_loss:93.873  MI_loss:2.956
+Epoch: [30][200/1000]	total_loss:0.088	aug_loss:0.295	 pro_loss:88.296  MI_loss:2.948
+Epoch: [30][300/1000]	total_loss:0.086	aug_loss:0.310	 pro_loss:92.508  MI_loss:3.168
+Epoch: [30][400/1000]	total_loss:0.043	aug_loss:0.264	 pro_loss:80.804  MI_loss:3.012
+Epoch: [30][500/1000]	total_loss:-0.116	aug_loss:0.060	 pro_loss:101.019  MI_loss:2.772
+Epoch: [30][600/1000]	total_loss:0.159	aug_loss:0.361	 pro_loss:83.370  MI_loss:2.848
+Epoch: [30][700/1000]	total_loss:-0.024	aug_loss:0.163	 pro_loss:101.352  MI_loss:2.884
+Epoch: [30][800/1000]	total_loss:0.312	aug_loss:0.505	 pro_loss:91.027  MI_loss:2.833
+Epoch: [30][900/1000]	total_loss:-0.125	aug_loss:0.079	 pro_loss:92.077  MI_loss:2.961
+epoch = 30,  best_acc1 = 84.141, best_acc1 = 84.186
+Epoch: [31][0/1000]	total_loss:-0.013	aug_loss:0.199	 pro_loss:88.752  MI_loss:3.006
+Epoch: [31][100/1000]	total_loss:0.239	aug_loss:0.431	 pro_loss:93.948  MI_loss:2.854
+Epoch: [31][200/1000]	total_loss:0.066	aug_loss:0.277	 pro_loss:82.389  MI_loss:2.930
+Epoch: [31][300/1000]	total_loss:0.194	aug_loss:0.404	 pro_loss:84.917  MI_loss:2.949
+Epoch: [31][400/1000]	total_loss:0.030	aug_loss:0.218	 pro_loss:105.202  MI_loss:2.932
+Epoch: [31][500/1000]	total_loss:0.022	aug_loss:0.210	 pro_loss:94.020  MI_loss:2.816
+Epoch: [31][600/1000]	total_loss:0.057	aug_loss:0.244	 pro_loss:95.725  MI_loss:2.824
+Epoch: [31][700/1000]	total_loss:-0.150	aug_loss:0.058	 pro_loss:86.301  MI_loss:2.941
+Epoch: [31][800/1000]	total_loss:0.038	aug_loss:0.244	 pro_loss:96.096  MI_loss:3.014
+Epoch: [31][900/1000]	total_loss:0.070	aug_loss:0.277	 pro_loss:76.471  MI_loss:2.839
+epoch = 31,  best_acc1 = 84.253, best_acc1 = 84.253
+Epoch: [32][0/1000]	total_loss:-0.021	aug_loss:0.169	 pro_loss:100.031  MI_loss:2.891
+Epoch: [32][100/1000]	total_loss:0.218	aug_loss:0.401	 pro_loss:102.894  MI_loss:2.863
+Epoch: [32][200/1000]	total_loss:-0.030	aug_loss:0.181	 pro_loss:88.080  MI_loss:2.987
+Epoch: [32][300/1000]	total_loss:-0.057	aug_loss:0.144	 pro_loss:91.642  MI_loss:2.924
+Epoch: [32][400/1000]	total_loss:-0.039	aug_loss:0.156	 pro_loss:101.183  MI_loss:2.957
+Epoch: [32][500/1000]	total_loss:0.199	aug_loss:0.405	 pro_loss:89.629  MI_loss:2.961
+Epoch: [32][600/1000]	total_loss:0.178	aug_loss:0.376	 pro_loss:94.847  MI_loss:2.932
+Epoch: [32][700/1000]	total_loss:-0.164	aug_loss:0.061	 pro_loss:85.107  MI_loss:3.097
+Epoch: [32][800/1000]	total_loss:-0.156	aug_loss:0.072	 pro_loss:72.418  MI_loss:3.013
+Epoch: [32][900/1000]	total_loss:-0.064	aug_loss:0.138	 pro_loss:96.177  MI_loss:2.985
+epoch = 32,  best_acc1 = 83.983, best_acc1 = 84.253
+Epoch: [33][0/1000]	total_loss:0.114	aug_loss:0.333	 pro_loss:87.568  MI_loss:3.067
+Epoch: [33][100/1000]	total_loss:0.525	aug_loss:0.750	 pro_loss:84.501  MI_loss:3.094
+Epoch: [33][200/1000]	total_loss:0.142	aug_loss:0.350	 pro_loss:88.048  MI_loss:2.963
+Epoch: [33][300/1000]	total_loss:0.189	aug_loss:0.368	 pro_loss:97.943  MI_loss:2.769
+Epoch: [33][400/1000]	total_loss:0.103	aug_loss:0.326	 pro_loss:88.068  MI_loss:3.104
+Epoch: [33][500/1000]	total_loss:-0.081	aug_loss:0.140	 pro_loss:83.655  MI_loss:3.046
+Epoch: [33][600/1000]	total_loss:0.011	aug_loss:0.199	 pro_loss:91.003  MI_loss:2.794
+Epoch: [33][700/1000]	total_loss:-0.016	aug_loss:0.176	 pro_loss:93.409  MI_loss:2.863
+Epoch: [33][800/1000]	total_loss:0.032	aug_loss:0.228	 pro_loss:96.275  MI_loss:2.920
+Epoch: [33][900/1000]	total_loss:-0.066	aug_loss:0.120	 pro_loss:98.611  MI_loss:2.851
+epoch = 33,  best_acc1 = 84.546, best_acc1 = 84.546
+Epoch: [34][0/1000]	total_loss:0.063	aug_loss:0.286	 pro_loss:85.815  MI_loss:3.085
+Epoch: [34][100/1000]	total_loss:0.152	aug_loss:0.353	 pro_loss:85.795  MI_loss:2.862
+Epoch: [34][200/1000]	total_loss:0.093	aug_loss:0.325	 pro_loss:76.144  MI_loss:3.087
+Epoch: [34][300/1000]	total_loss:0.148	aug_loss:0.348	 pro_loss:88.634  MI_loss:2.892
+Epoch: [34][400/1000]	total_loss:0.348	aug_loss:0.540	 pro_loss:96.915  MI_loss:2.895
+Epoch: [34][500/1000]	total_loss:0.236	aug_loss:0.464	 pro_loss:81.726  MI_loss:3.091
+Epoch: [34][600/1000]	total_loss:-0.079	aug_loss:0.133	 pro_loss:83.339  MI_loss:2.950
+Epoch: [34][700/1000]	total_loss:0.005	aug_loss:0.211	 pro_loss:86.178  MI_loss:2.921
+Epoch: [34][800/1000]	total_loss:0.283	aug_loss:0.501	 pro_loss:87.897  MI_loss:3.053
+Epoch: [34][900/1000]	total_loss:-0.086	aug_loss:0.121	 pro_loss:94.963  MI_loss:3.014
+epoch = 34,  best_acc1 = 84.050, best_acc1 = 84.546
+Epoch: [35][0/1000]	total_loss:0.067	aug_loss:0.257	 pro_loss:98.334  MI_loss:2.878
+Epoch: [35][100/1000]	total_loss:0.169	aug_loss:0.376	 pro_loss:95.054  MI_loss:3.017
+Epoch: [35][200/1000]	total_loss:-0.125	aug_loss:0.097	 pro_loss:85.687  MI_loss:3.082
+Epoch: [35][300/1000]	total_loss:0.119	aug_loss:0.309	 pro_loss:95.615  MI_loss:2.861
+Epoch: [35][400/1000]	total_loss:0.231	aug_loss:0.427	 pro_loss:90.248  MI_loss:2.865
+Epoch: [35][500/1000]	total_loss:-0.127	aug_loss:0.085	 pro_loss:73.207  MI_loss:2.855
+Epoch: [35][600/1000]	total_loss:0.036	aug_loss:0.265	 pro_loss:81.416  MI_loss:3.113
+Epoch: [35][700/1000]	total_loss:0.251	aug_loss:0.459	 pro_loss:93.960  MI_loss:3.020
+Epoch: [35][800/1000]	total_loss:-0.018	aug_loss:0.195	 pro_loss:87.722  MI_loss:3.006
+Epoch: [35][900/1000]	total_loss:0.100	aug_loss:0.299	 pro_loss:97.836  MI_loss:2.967
+epoch = 35,  best_acc1 = 84.276, best_acc1 = 84.546
+Epoch: [36][0/1000]	total_loss:0.017	aug_loss:0.213	 pro_loss:88.108  MI_loss:2.847
+Epoch: [36][100/1000]	total_loss:-0.110	aug_loss:0.124	 pro_loss:76.196  MI_loss:3.106
+Epoch: [36][200/1000]	total_loss:-0.006	aug_loss:0.207	 pro_loss:90.224  MI_loss:3.031
+Epoch: [36][300/1000]	total_loss:0.155	aug_loss:0.373	 pro_loss:81.387  MI_loss:2.997
+Epoch: [36][400/1000]	total_loss:-0.135	aug_loss:0.080	 pro_loss:88.231  MI_loss:3.038
+Epoch: [36][500/1000]	total_loss:-0.008	aug_loss:0.187	 pro_loss:86.512  MI_loss:2.817
+Epoch: [36][600/1000]	total_loss:-0.063	aug_loss:0.115	 pro_loss:93.457  MI_loss:2.714
+Epoch: [36][700/1000]	total_loss:-0.083	aug_loss:0.106	 pro_loss:92.014  MI_loss:2.818
+Epoch: [36][800/1000]	total_loss:0.061	aug_loss:0.253	 pro_loss:93.188  MI_loss:2.847
+Epoch: [36][900/1000]	total_loss:-0.029	aug_loss:0.163	 pro_loss:96.958  MI_loss:2.892
+epoch = 36,  best_acc1 = 84.141, best_acc1 = 84.546
+Epoch: [37][0/1000]	total_loss:-0.132	aug_loss:0.065	 pro_loss:90.943  MI_loss:2.874
+Epoch: [37][100/1000]	total_loss:0.063	aug_loss:0.267	 pro_loss:90.197  MI_loss:2.933
+Epoch: [37][200/1000]	total_loss:0.019	aug_loss:0.222	 pro_loss:95.619  MI_loss:2.987
+Epoch: [37][300/1000]	total_loss:0.134	aug_loss:0.360	 pro_loss:86.247  MI_loss:3.127
+Epoch: [37][400/1000]	total_loss:0.180	aug_loss:0.392	 pro_loss:94.109  MI_loss:3.062
+Epoch: [37][500/1000]	total_loss:0.581	aug_loss:0.804	 pro_loss:81.862  MI_loss:3.049
+Epoch: [37][600/1000]	total_loss:-0.111	aug_loss:0.095	 pro_loss:81.451  MI_loss:2.874
+Epoch: [37][700/1000]	total_loss:0.034	aug_loss:0.233	 pro_loss:97.615  MI_loss:2.971
+Epoch: [37][800/1000]	total_loss:-0.079	aug_loss:0.117	 pro_loss:102.478  MI_loss:2.988
+Epoch: [37][900/1000]	total_loss:-0.115	aug_loss:0.092	 pro_loss:84.857  MI_loss:2.917
+epoch = 37,  best_acc1 = 84.028, best_acc1 = 84.546
+Epoch: [38][0/1000]	total_loss:-0.045	aug_loss:0.145	 pro_loss:99.605  MI_loss:2.894
+Epoch: [38][100/1000]	total_loss:0.021	aug_loss:0.208	 pro_loss:95.562  MI_loss:2.826
+Epoch: [38][200/1000]	total_loss:0.256	aug_loss:0.426	 pro_loss:104.900  MI_loss:2.750
+Epoch: [38][300/1000]	total_loss:-0.053	aug_loss:0.174	 pro_loss:78.763  MI_loss:3.061
+Epoch: [38][400/1000]	total_loss:0.264	aug_loss:0.482	 pro_loss:84.983  MI_loss:3.031
+Epoch: [38][500/1000]	total_loss:-0.110	aug_loss:0.098	 pro_loss:86.063  MI_loss:2.937
+Epoch: [38][600/1000]	total_loss:-0.051	aug_loss:0.163	 pro_loss:96.161  MI_loss:3.104
+Epoch: [38][700/1000]	total_loss:0.071	aug_loss:0.284	 pro_loss:89.394  MI_loss:3.029
+Epoch: [38][800/1000]	total_loss:0.522	aug_loss:0.720	 pro_loss:95.902  MI_loss:2.947
+Epoch: [38][900/1000]	total_loss:-0.111	aug_loss:0.104	 pro_loss:85.599  MI_loss:2.998
+epoch = 38,  best_acc1 = 84.096, best_acc1 = 84.546
+Epoch: [39][0/1000]	total_loss:-0.036	aug_loss:0.150	 pro_loss:91.743  MI_loss:2.777
+Epoch: [39][100/1000]	total_loss:-0.007	aug_loss:0.181	 pro_loss:91.586  MI_loss:2.798
+Epoch: [39][200/1000]	total_loss:-0.034	aug_loss:0.157	 pro_loss:92.698  MI_loss:2.839
+Epoch: [39][300/1000]	total_loss:0.043	aug_loss:0.242	 pro_loss:91.350  MI_loss:2.905
+Epoch: [39][400/1000]	total_loss:0.072	aug_loss:0.273	 pro_loss:88.227  MI_loss:2.889
+Epoch: [39][500/1000]	total_loss:0.295	aug_loss:0.514	 pro_loss:81.419  MI_loss:3.006
+Epoch: [39][600/1000]	total_loss:0.125	aug_loss:0.321	 pro_loss:95.792  MI_loss:2.923
+Epoch: [39][700/1000]	total_loss:-0.141	aug_loss:0.066	 pro_loss:89.046  MI_loss:2.956
+Epoch: [39][800/1000]	total_loss:0.200	aug_loss:0.429	 pro_loss:83.500  MI_loss:3.126
+Epoch: [39][900/1000]	total_loss:0.027	aug_loss:0.250	 pro_loss:80.080  MI_loss:3.033
+epoch = 39,  best_acc1 = 83.780, best_acc1 = 84.546
+best_acc1 = 84.546
+test_accuracy = 84.546
