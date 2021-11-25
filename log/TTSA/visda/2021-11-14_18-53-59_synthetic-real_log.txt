@@ -1,0 +1,763 @@
+file name: train_TTSA
+PTL.version = 7.2.0
+torch.version = 1.7.0+cu110
+torchvision.version = 0.8.1+cu110
+arch = resnet101
+gpu_id = 0
+dset = visda
+s_dset_path = /data1/TL/data/list/visda2017/synthetic_12.txt
+t_dset_path = /data1/TL/data/list/visda2017/real_12.txt
+t_test_path = /data1/TL/data/list/visda2017/real_12.txt
+output_dir = log/TTSA/visda
+center_crop = True
+workers = 4
+epochs = 30
+iters_per_epoch = 1000
+print_freq = 100
+batch_size = 32
+lr = 0.001
+decay_rate = 0.75
+momentum = 0.9
+weight_decay = 0.001
+seed = 4
+alpha = 0.1
+lambda0 = 0.25
+eta = 0.5
+gamma = 0.001
+beta = 0.1
+SaveModel = False
+Epoch: [00][0/1000]	total_loss:3.410	aug_loss:3.282	 pro_loss:145.820  MI_loss:0.185
+Epoch: [00][100/1000]	total_loss:0.382	aug_loss:0.359	 pro_loss:124.096  MI_loss:1.007
+Epoch: [00][200/1000]	total_loss:0.391	aug_loss:0.405	 pro_loss:108.264  MI_loss:1.224
+Epoch: [00][300/1000]	total_loss:0.221	aug_loss:0.274	 pro_loss:86.842  MI_loss:1.395
+Epoch: [00][400/1000]	total_loss:0.073	aug_loss:0.149	 pro_loss:80.955  MI_loss:1.574
+Epoch: [00][500/1000]	total_loss:0.218	aug_loss:0.332	 pro_loss:65.745  MI_loss:1.791
+Epoch: [00][600/1000]	total_loss:0.087	aug_loss:0.188	 pro_loss:69.476  MI_loss:1.701
+Epoch: [00][700/1000]	total_loss:0.201	aug_loss:0.307	 pro_loss:68.318  MI_loss:1.743
+Epoch: [00][800/1000]	total_loss:0.046	aug_loss:0.177	 pro_loss:61.632  MI_loss:1.917
+Epoch: [00][900/1000]	total_loss:-0.028	aug_loss:0.091	 pro_loss:66.791  MI_loss:1.858
+	plane----------(93.225)
+	bcybl----------(65.957)
+	bus----------(75.480)
+	car----------(59.706)
+	horse----------(92.113)
+	knife----------(89.060)
+	mcyle----------(86.836)
+	person----------(74.850)
+	plant----------(88.217)
+	sktb----------(60.894)
+	train----------(84.821)
+	truck----------(37.653)
+	average:75.734
+epoch = 00,  best_acc1 = 75.734, best_acc1 = 75.734
+Epoch: [01][0/1000]	total_loss:-0.004	aug_loss:0.115	 pro_loss:63.486  MI_loss:1.829
+Epoch: [01][100/1000]	total_loss:0.039	aug_loss:0.163	 pro_loss:63.990  MI_loss:1.883
+Epoch: [01][200/1000]	total_loss:-0.023	aug_loss:0.102	 pro_loss:69.607  MI_loss:1.949
+Epoch: [01][300/1000]	total_loss:-0.110	aug_loss:0.035	 pro_loss:49.552  MI_loss:1.950
+Epoch: [01][400/1000]	total_loss:-0.139	aug_loss:0.011	 pro_loss:51.057  MI_loss:2.015
+Epoch: [01][500/1000]	total_loss:-0.085	aug_loss:0.041	 pro_loss:61.524  MI_loss:1.876
+Epoch: [01][600/1000]	total_loss:-0.103	aug_loss:0.035	 pro_loss:54.944  MI_loss:1.931
+Epoch: [01][700/1000]	total_loss:-0.068	aug_loss:0.056	 pro_loss:68.125  MI_loss:1.926
+Epoch: [01][800/1000]	total_loss:-0.120	aug_loss:0.025	 pro_loss:48.048  MI_loss:1.923
+Epoch: [01][900/1000]	total_loss:-0.095	aug_loss:0.072	 pro_loss:44.106  MI_loss:2.110
+	plane----------(93.363)
+	bcybl----------(71.482)
+	bus----------(77.910)
+	car----------(57.398)
+	horse----------(92.219)
+	knife----------(93.060)
+	mcyle----------(85.473)
+	person----------(76.900)
+	plant----------(87.690)
+	sktb----------(71.285)
+	train----------(82.035)
+	truck----------(43.385)
+	average:77.683
+epoch = 01,  best_acc1 = 77.683, best_acc1 = 77.683
+Epoch: [02][0/1000]	total_loss:-0.032	aug_loss:0.104	 pro_loss:53.506  MI_loss:1.903
+Epoch: [02][100/1000]	total_loss:-0.056	aug_loss:0.049	 pro_loss:68.191  MI_loss:1.738
+Epoch: [02][200/1000]	total_loss:-0.066	aug_loss:0.080	 pro_loss:51.416  MI_loss:1.975
+Epoch: [02][300/1000]	total_loss:-0.068	aug_loss:0.090	 pro_loss:55.234  MI_loss:2.126
+Epoch: [02][400/1000]	total_loss:-0.071	aug_loss:0.060	 pro_loss:60.779  MI_loss:1.919
+Epoch: [02][500/1000]	total_loss:-0.135	aug_loss:0.014	 pro_loss:53.471  MI_loss:2.025
+Epoch: [02][600/1000]	total_loss:-0.149	aug_loss:0.020	 pro_loss:38.844  MI_loss:2.074
+Epoch: [02][700/1000]	total_loss:-0.012	aug_loss:0.139	 pro_loss:48.033  MI_loss:1.993
+Epoch: [02][800/1000]	total_loss:-0.081	aug_loss:0.029	 pro_loss:63.240  MI_loss:1.734
+Epoch: [02][900/1000]	total_loss:-0.120	aug_loss:0.035	 pro_loss:56.205  MI_loss:2.108
+	plane----------(94.460)
+	bcybl----------(76.086)
+	bus----------(75.565)
+	car----------(58.283)
+	horse----------(91.452)
+	knife----------(93.880)
+	mcyle----------(85.714)
+	person----------(75.675)
+	plant----------(86.920)
+	sktb----------(79.176)
+	train----------(83.239)
+	truck----------(44.845)
+	average:78.775
+epoch = 02,  best_acc1 = 78.775, best_acc1 = 78.775
+Epoch: [03][0/1000]	total_loss:-0.138	aug_loss:0.033	 pro_loss:33.482  MI_loss:2.039
+Epoch: [03][100/1000]	total_loss:-0.125	aug_loss:0.036	 pro_loss:45.181  MI_loss:2.060
+Epoch: [03][200/1000]	total_loss:-0.153	aug_loss:0.021	 pro_loss:36.956  MI_loss:2.110
+Epoch: [03][300/1000]	total_loss:-0.135	aug_loss:0.016	 pro_loss:46.821  MI_loss:1.980
+Epoch: [03][400/1000]	total_loss:-0.118	aug_loss:0.030	 pro_loss:54.070  MI_loss:2.015
+Epoch: [03][500/1000]	total_loss:-0.035	aug_loss:0.143	 pro_loss:44.099  MI_loss:2.215
+Epoch: [03][600/1000]	total_loss:-0.176	aug_loss:0.010	 pro_loss:32.511  MI_loss:2.186
+Epoch: [03][700/1000]	total_loss:-0.130	aug_loss:0.043	 pro_loss:44.451  MI_loss:2.168
+Epoch: [03][800/1000]	total_loss:-0.139	aug_loss:0.022	 pro_loss:54.986  MI_loss:2.160
+Epoch: [03][900/1000]	total_loss:-0.147	aug_loss:0.010	 pro_loss:47.541  MI_loss:2.045
+	plane----------(94.240)
+	bcybl----------(77.871)
+	bus----------(78.209)
+	car----------(56.245)
+	horse----------(92.475)
+	knife----------(93.108)
+	mcyle----------(85.594)
+	person----------(76.975)
+	plant----------(88.217)
+	sktb----------(80.359)
+	train----------(81.209)
+	truck----------(46.774)
+	average:79.273
+epoch = 03,  best_acc1 = 79.273, best_acc1 = 79.273
+Epoch: [04][0/1000]	total_loss:-0.121	aug_loss:0.051	 pro_loss:37.380  MI_loss:2.093
+Epoch: [04][100/1000]	total_loss:-0.159	aug_loss:0.017	 pro_loss:39.144  MI_loss:2.146
+Epoch: [04][200/1000]	total_loss:-0.092	aug_loss:0.047	 pro_loss:53.756  MI_loss:1.931
+Epoch: [04][300/1000]	total_loss:-0.146	aug_loss:0.004	 pro_loss:46.672  MI_loss:1.970
+Epoch: [04][400/1000]	total_loss:-0.139	aug_loss:0.012	 pro_loss:48.436  MI_loss:1.996
+Epoch: [04][500/1000]	total_loss:-0.076	aug_loss:0.073	 pro_loss:48.792  MI_loss:1.982
+Epoch: [04][600/1000]	total_loss:-0.113	aug_loss:0.053	 pro_loss:41.198  MI_loss:2.069
+Epoch: [04][700/1000]	total_loss:-0.100	aug_loss:0.050	 pro_loss:51.848  MI_loss:2.020
+Epoch: [04][800/1000]	total_loss:-0.145	aug_loss:0.023	 pro_loss:36.256  MI_loss:2.038
+Epoch: [04][900/1000]	total_loss:-0.106	aug_loss:0.068	 pro_loss:39.221  MI_loss:2.133
+	plane----------(94.707)
+	bcybl----------(80.115)
+	bus----------(76.162)
+	car----------(52.639)
+	horse----------(92.113)
+	knife----------(93.012)
+	mcyle----------(83.851)
+	person----------(80.300)
+	plant----------(87.360)
+	sktb----------(80.623)
+	train----------(83.664)
+	truck----------(46.882)
+	average:79.286
+epoch = 04,  best_acc1 = 79.286, best_acc1 = 79.286
+Epoch: [05][0/1000]	total_loss:-0.163	aug_loss:0.007	 pro_loss:37.438  MI_loss:2.076
+Epoch: [05][100/1000]	total_loss:-0.141	aug_loss:0.022	 pro_loss:46.146  MI_loss:2.096
+Epoch: [05][200/1000]	total_loss:-0.116	aug_loss:0.058	 pro_loss:32.731  MI_loss:2.066
+Epoch: [05][300/1000]	total_loss:-0.161	aug_loss:0.016	 pro_loss:29.661  MI_loss:2.062
+Epoch: [05][400/1000]	total_loss:-0.129	aug_loss:0.041	 pro_loss:42.166  MI_loss:2.116
+Epoch: [05][500/1000]	total_loss:-0.129	aug_loss:0.021	 pro_loss:46.424  MI_loss:1.962
+Epoch: [05][600/1000]	total_loss:-0.147	aug_loss:0.035	 pro_loss:32.975  MI_loss:2.150
+Epoch: [05][700/1000]	total_loss:-0.163	aug_loss:0.010	 pro_loss:35.494  MI_loss:2.088
+Epoch: [05][800/1000]	total_loss:-0.114	aug_loss:0.019	 pro_loss:58.850  MI_loss:1.914
+Epoch: [05][900/1000]	total_loss:-0.137	aug_loss:0.029	 pro_loss:36.374  MI_loss:2.031
+	plane----------(95.776)
+	bcybl----------(76.201)
+	bus----------(75.629)
+	car----------(55.033)
+	horse----------(92.049)
+	knife----------(94.265)
+	mcyle----------(86.801)
+	person----------(78.075)
+	plant----------(85.359)
+	sktb----------(81.982)
+	train----------(83.617)
+	truck----------(47.693)
+	average:79.373
+epoch = 05,  best_acc1 = 79.373, best_acc1 = 79.373
+Epoch: [06][0/1000]	total_loss:-0.132	aug_loss:0.036	 pro_loss:43.477  MI_loss:2.109
+Epoch: [06][100/1000]	total_loss:-0.112	aug_loss:0.066	 pro_loss:36.844  MI_loss:2.155
+Epoch: [06][200/1000]	total_loss:-0.185	aug_loss:0.005	 pro_loss:29.288  MI_loss:2.202
+Epoch: [06][300/1000]	total_loss:-0.141	aug_loss:0.030	 pro_loss:39.495  MI_loss:2.105
+Epoch: [06][400/1000]	total_loss:-0.195	aug_loss:0.006	 pro_loss:23.823  MI_loss:2.246
+Epoch: [06][500/1000]	total_loss:-0.160	aug_loss:0.010	 pro_loss:35.238  MI_loss:2.059
+Epoch: [06][600/1000]	total_loss:-0.141	aug_loss:0.020	 pro_loss:48.955  MI_loss:2.098
+Epoch: [06][700/1000]	total_loss:-0.158	aug_loss:0.012	 pro_loss:39.412  MI_loss:2.092
+Epoch: [06][800/1000]	total_loss:-0.069	aug_loss:0.058	 pro_loss:59.708  MI_loss:1.862
+Epoch: [06][900/1000]	total_loss:-0.181	aug_loss:0.006	 pro_loss:31.263  MI_loss:2.188
+	plane----------(94.432)
+	bcybl----------(78.504)
+	bus----------(75.565)
+	car----------(55.504)
+	horse----------(92.688)
+	knife----------(93.108)
+	mcyle----------(85.801)
+	person----------(78.725)
+	plant----------(86.964)
+	sktb----------(84.875)
+	train----------(84.136)
+	truck----------(49.351)
+	average:79.971
+epoch = 06,  best_acc1 = 79.971, best_acc1 = 79.971
+Epoch: [07][0/1000]	total_loss:-0.169	aug_loss:0.006	 pro_loss:38.096  MI_loss:2.126
+Epoch: [07][100/1000]	total_loss:-0.145	aug_loss:0.010	 pro_loss:51.362  MI_loss:2.066
+Epoch: [07][200/1000]	total_loss:-0.182	aug_loss:0.006	 pro_loss:27.774  MI_loss:2.160
+Epoch: [07][300/1000]	total_loss:-0.105	aug_loss:0.055	 pro_loss:44.995  MI_loss:2.058
+Epoch: [07][400/1000]	total_loss:-0.096	aug_loss:0.068	 pro_loss:40.247  MI_loss:2.035
+Epoch: [07][500/1000]	total_loss:-0.161	aug_loss:0.015	 pro_loss:29.405  MI_loss:2.052
+Epoch: [07][600/1000]	total_loss:-0.155	aug_loss:0.024	 pro_loss:32.385  MI_loss:2.109
+Epoch: [07][700/1000]	total_loss:-0.149	aug_loss:0.011	 pro_loss:47.407  MI_loss:2.074
+Epoch: [07][800/1000]	total_loss:-0.134	aug_loss:0.032	 pro_loss:39.208  MI_loss:2.049
+Epoch: [07][900/1000]	total_loss:-0.072	aug_loss:0.110	 pro_loss:29.866  MI_loss:2.123
+	plane----------(94.542)
+	bcybl----------(80.317)
+	bus----------(76.439)
+	car----------(53.331)
+	horse----------(92.006)
+	knife----------(95.181)
+	mcyle----------(86.542)
+	person----------(77.700)
+	plant----------(84.326)
+	sktb----------(83.998)
+	train----------(83.451)
+	truck----------(48.648)
+	average:79.707
+epoch = 07,  best_acc1 = 79.707, best_acc1 = 79.971
+Epoch: [08][0/1000]	total_loss:-0.047	aug_loss:0.137	 pro_loss:35.673  MI_loss:2.194
+Epoch: [08][100/1000]	total_loss:-0.165	aug_loss:0.003	 pro_loss:34.468  MI_loss:2.022
+Epoch: [08][200/1000]	total_loss:-0.168	aug_loss:0.020	 pro_loss:27.166  MI_loss:2.151
+Epoch: [08][300/1000]	total_loss:-0.169	aug_loss:0.008	 pro_loss:38.643  MI_loss:2.158
+Epoch: [08][400/1000]	total_loss:-0.162	aug_loss:0.011	 pro_loss:40.588  MI_loss:2.139
+Epoch: [08][500/1000]	total_loss:-0.147	aug_loss:0.037	 pro_loss:33.306  MI_loss:2.178
+Epoch: [08][600/1000]	total_loss:-0.182	aug_loss:0.004	 pro_loss:28.429  MI_loss:2.143
+Epoch: [08][700/1000]	total_loss:-0.166	aug_loss:0.015	 pro_loss:34.982  MI_loss:2.152
+Epoch: [08][800/1000]	total_loss:-0.113	aug_loss:0.077	 pro_loss:28.719  MI_loss:2.185
+Epoch: [08][900/1000]	total_loss:-0.191	aug_loss:0.004	 pro_loss:24.286  MI_loss:2.191
+	plane----------(94.542)
+	bcybl----------(79.338)
+	bus----------(73.923)
+	car----------(51.601)
+	horse----------(92.539)
+	knife----------(93.735)
+	mcyle----------(85.542)
+	person----------(79.475)
+	plant----------(87.250)
+	sktb----------(85.445)
+	train----------(83.900)
+	truck----------(52.650)
+	average:79.995
+epoch = 08,  best_acc1 = 79.995, best_acc1 = 79.995
+Epoch: [09][0/1000]	total_loss:-0.132	aug_loss:0.003	 pro_loss:52.263  MI_loss:1.871
+Epoch: [09][100/1000]	total_loss:-0.108	aug_loss:0.059	 pro_loss:35.814  MI_loss:2.030
+Epoch: [09][200/1000]	total_loss:-0.143	aug_loss:0.048	 pro_loss:26.475  MI_loss:2.175
+Epoch: [09][300/1000]	total_loss:-0.181	aug_loss:0.021	 pro_loss:28.822  MI_loss:2.303
+Epoch: [09][400/1000]	total_loss:-0.057	aug_loss:0.118	 pro_loss:35.478  MI_loss:2.107
+Epoch: [09][500/1000]	total_loss:-0.030	aug_loss:0.136	 pro_loss:38.552  MI_loss:2.048
+Epoch: [09][600/1000]	total_loss:-0.170	aug_loss:0.026	 pro_loss:27.590  MI_loss:2.242
+Epoch: [09][700/1000]	total_loss:-0.131	aug_loss:0.036	 pro_loss:39.572  MI_loss:2.064
+Epoch: [09][800/1000]	total_loss:-0.177	aug_loss:0.004	 pro_loss:26.905  MI_loss:2.076
+Epoch: [09][900/1000]	total_loss:-0.166	aug_loss:0.008	 pro_loss:36.320  MI_loss:2.102
+	plane----------(94.048)
+	bcybl----------(78.273)
+	bus----------(77.740)
+	car----------(50.793)
+	horse----------(92.347)
+	knife----------(93.880)
+	mcyle----------(83.713)
+	person----------(77.850)
+	plant----------(86.239)
+	sktb----------(86.322)
+	train----------(84.655)
+	truck----------(46.792)
+	average:79.388
+epoch = 09,  best_acc1 = 79.388, best_acc1 = 79.995
+Epoch: [10][0/1000]	total_loss:-0.167	aug_loss:0.005	 pro_loss:35.194  MI_loss:2.068
+Epoch: [10][100/1000]	total_loss:-0.129	aug_loss:0.023	 pro_loss:54.587  MI_loss:2.064
+Epoch: [10][200/1000]	total_loss:-0.132	aug_loss:0.041	 pro_loss:35.738  MI_loss:2.083
+Epoch: [10][300/1000]	total_loss:-0.146	aug_loss:0.035	 pro_loss:30.642  MI_loss:2.117
+Epoch: [10][400/1000]	total_loss:-0.170	aug_loss:0.024	 pro_loss:24.872  MI_loss:2.191
+Epoch: [10][500/1000]	total_loss:-0.145	aug_loss:0.008	 pro_loss:48.827  MI_loss:2.016
+Epoch: [10][600/1000]	total_loss:-0.129	aug_loss:0.009	 pro_loss:54.947  MI_loss:1.930
+Epoch: [10][700/1000]	total_loss:-0.103	aug_loss:0.050	 pro_loss:38.568  MI_loss:1.912
+Epoch: [10][800/1000]	total_loss:-0.163	aug_loss:0.010	 pro_loss:32.279  MI_loss:2.054
+Epoch: [10][900/1000]	total_loss:-0.172	aug_loss:0.013	 pro_loss:32.803  MI_loss:2.172
+	plane----------(94.899)
+	bcybl----------(80.259)
+	bus----------(76.567)
+	car----------(51.764)
+	horse----------(92.688)
+	knife----------(93.108)
+	mcyle----------(85.041)
+	person----------(78.500)
+	plant----------(86.986)
+	sktb----------(86.366)
+	train----------(86.166)
+	truck----------(49.063)
+	average:80.117
+epoch = 10,  best_acc1 = 80.117, best_acc1 = 80.117
+Epoch: [11][0/1000]	total_loss:-0.176	aug_loss:0.023	 pro_loss:23.879  MI_loss:2.238
+Epoch: [11][100/1000]	total_loss:-0.058	aug_loss:0.125	 pro_loss:35.598  MI_loss:2.178
+Epoch: [11][200/1000]	total_loss:-0.177	aug_loss:0.007	 pro_loss:32.282  MI_loss:2.165
+Epoch: [11][300/1000]	total_loss:-0.160	aug_loss:0.022	 pro_loss:30.069  MI_loss:2.117
+Epoch: [11][400/1000]	total_loss:-0.166	aug_loss:0.010	 pro_loss:34.124  MI_loss:2.104
+Epoch: [11][500/1000]	total_loss:-0.152	aug_loss:0.018	 pro_loss:36.513  MI_loss:2.066
+Epoch: [11][600/1000]	total_loss:-0.165	aug_loss:0.012	 pro_loss:31.298  MI_loss:2.083
+Epoch: [11][700/1000]	total_loss:-0.191	aug_loss:0.003	 pro_loss:25.106  MI_loss:2.194
+Epoch: [11][800/1000]	total_loss:-0.082	aug_loss:0.091	 pro_loss:42.362  MI_loss:2.149
+Epoch: [11][900/1000]	total_loss:-0.157	aug_loss:0.027	 pro_loss:35.329  MI_loss:2.192
+	plane----------(94.981)
+	bcybl----------(82.158)
+	bus----------(75.757)
+	car----------(52.226)
+	horse----------(92.432)
+	knife----------(93.494)
+	mcyle----------(84.800)
+	person----------(79.025)
+	plant----------(88.217)
+	sktb----------(86.015)
+	train----------(84.561)
+	truck----------(48.720)
+	average:80.199
+epoch = 11,  best_acc1 = 80.199, best_acc1 = 80.199
+Epoch: [12][0/1000]	total_loss:-0.172	aug_loss:0.008	 pro_loss:34.493  MI_loss:2.149
+Epoch: [12][100/1000]	total_loss:-0.184	aug_loss:0.007	 pro_loss:26.903  MI_loss:2.174
+Epoch: [12][200/1000]	total_loss:-0.165	aug_loss:0.013	 pro_loss:37.722  MI_loss:2.163
+Epoch: [12][300/1000]	total_loss:-0.183	aug_loss:0.006	 pro_loss:25.970  MI_loss:2.141
+Epoch: [12][400/1000]	total_loss:-0.167	aug_loss:0.006	 pro_loss:37.921  MI_loss:2.112
+Epoch: [12][500/1000]	total_loss:-0.170	aug_loss:0.005	 pro_loss:34.131  MI_loss:2.087
+Epoch: [12][600/1000]	total_loss:-0.066	aug_loss:0.119	 pro_loss:31.560  MI_loss:2.165
+Epoch: [12][700/1000]	total_loss:-0.155	aug_loss:0.008	 pro_loss:41.394  MI_loss:2.038
+Epoch: [12][800/1000]	total_loss:-0.148	aug_loss:0.031	 pro_loss:28.991  MI_loss:2.075
+Epoch: [12][900/1000]	total_loss:-0.165	aug_loss:0.008	 pro_loss:35.417  MI_loss:2.085
+	plane----------(95.008)
+	bcybl----------(82.187)
+	bus----------(75.480)
+	car----------(52.437)
+	horse----------(92.688)
+	knife----------(92.723)
+	mcyle----------(84.938)
+	person----------(78.550)
+	plant----------(87.536)
+	sktb----------(87.505)
+	train----------(84.514)
+	truck----------(48.720)
+	average:80.191
+epoch = 12,  best_acc1 = 80.191, best_acc1 = 80.199
+Epoch: [13][0/1000]	total_loss:-0.175	aug_loss:0.009	 pro_loss:32.789  MI_loss:2.167
+Epoch: [13][100/1000]	total_loss:-0.150	aug_loss:0.032	 pro_loss:36.558  MI_loss:2.189
+Epoch: [13][200/1000]	total_loss:-0.148	aug_loss:0.006	 pro_loss:41.032  MI_loss:1.949
+Epoch: [13][300/1000]	total_loss:-0.187	aug_loss:0.017	 pro_loss:22.232  MI_loss:2.266
+Epoch: [13][400/1000]	total_loss:-0.182	aug_loss:0.021	 pro_loss:24.385  MI_loss:2.268
+Epoch: [13][500/1000]	total_loss:-0.198	aug_loss:0.004	 pro_loss:22.829  MI_loss:2.249
+Epoch: [13][600/1000]	total_loss:-0.182	aug_loss:0.004	 pro_loss:29.188  MI_loss:2.149
+Epoch: [13][700/1000]	total_loss:-0.175	aug_loss:0.006	 pro_loss:33.290  MI_loss:2.145
+Epoch: [13][800/1000]	total_loss:-0.183	aug_loss:0.013	 pro_loss:23.291  MI_loss:2.189
+Epoch: [13][900/1000]	total_loss:-0.144	aug_loss:0.030	 pro_loss:28.101  MI_loss:2.017
+	plane----------(94.076)
+	bcybl----------(83.194)
+	bus----------(75.800)
+	car----------(50.784)
+	horse----------(92.155)
+	knife----------(92.867)
+	mcyle----------(82.591)
+	person----------(77.400)
+	plant----------(90.767)
+	sktb----------(86.804)
+	train----------(84.585)
+	truck----------(48.576)
+	average:79.967
+epoch = 13,  best_acc1 = 79.967, best_acc1 = 80.199
+Epoch: [14][0/1000]	total_loss:-0.203	aug_loss:0.006	 pro_loss:19.330  MI_loss:2.286
+Epoch: [14][100/1000]	total_loss:-0.173	aug_loss:0.014	 pro_loss:29.099  MI_loss:2.158
+Epoch: [14][200/1000]	total_loss:-0.187	aug_loss:0.005	 pro_loss:27.468  MI_loss:2.198
+Epoch: [14][300/1000]	total_loss:-0.177	aug_loss:0.003	 pro_loss:32.824  MI_loss:2.132
+Epoch: [14][400/1000]	total_loss:-0.158	aug_loss:0.016	 pro_loss:38.525  MI_loss:2.124
+Epoch: [14][500/1000]	total_loss:-0.178	aug_loss:0.002	 pro_loss:33.806  MI_loss:2.140
+Epoch: [14][600/1000]	total_loss:-0.145	aug_loss:0.007	 pro_loss:50.960  MI_loss:2.027
+Epoch: [14][700/1000]	total_loss:-0.160	aug_loss:0.014	 pro_loss:36.137  MI_loss:2.093
+Epoch: [14][800/1000]	total_loss:-0.172	aug_loss:0.007	 pro_loss:41.988  MI_loss:2.211
+Epoch: [14][900/1000]	total_loss:-0.172	aug_loss:0.015	 pro_loss:27.754  MI_loss:2.147
+	plane----------(95.639)
+	bcybl----------(81.468)
+	bus----------(75.714)
+	car----------(52.658)
+	horse----------(92.454)
+	knife----------(93.590)
+	mcyle----------(83.920)
+	person----------(79.350)
+	plant----------(87.514)
+	sktb----------(86.760)
+	train----------(84.821)
+	truck----------(46.683)
+	average:80.048
+epoch = 14,  best_acc1 = 80.048, best_acc1 = 80.199
+Epoch: [15][0/1000]	total_loss:-0.164	aug_loss:0.015	 pro_loss:37.172  MI_loss:2.162
+Epoch: [15][100/1000]	total_loss:-0.197	aug_loss:0.009	 pro_loss:20.289  MI_loss:2.260
+Epoch: [15][200/1000]	total_loss:-0.141	aug_loss:0.048	 pro_loss:27.832  MI_loss:2.165
+Epoch: [15][300/1000]	total_loss:-0.186	aug_loss:0.005	 pro_loss:26.153  MI_loss:2.179
+Epoch: [15][400/1000]	total_loss:-0.197	aug_loss:0.005	 pro_loss:24.846  MI_loss:2.264
+Epoch: [15][500/1000]	total_loss:-0.190	aug_loss:0.005	 pro_loss:22.903  MI_loss:2.172
+Epoch: [15][600/1000]	total_loss:-0.101	aug_loss:0.093	 pro_loss:23.813  MI_loss:2.179
+Epoch: [15][700/1000]	total_loss:-0.177	aug_loss:0.006	 pro_loss:31.331  MI_loss:2.150
+Epoch: [15][800/1000]	total_loss:-0.167	aug_loss:0.004	 pro_loss:34.887  MI_loss:2.068
+Epoch: [15][900/1000]	total_loss:-0.106	aug_loss:0.061	 pro_loss:35.425  MI_loss:2.019
+	plane----------(95.968)
+	bcybl----------(81.525)
+	bus----------(76.759)
+	car----------(52.149)
+	horse----------(92.560)
+	knife----------(92.964)
+	mcyle----------(85.283)
+	person----------(77.250)
+	plant----------(87.206)
+	sktb----------(88.163)
+	train----------(84.750)
+	truck----------(49.585)
+	average:80.347
+epoch = 15,  best_acc1 = 80.347, best_acc1 = 80.347
+Epoch: [16][0/1000]	total_loss:-0.173	aug_loss:0.010	 pro_loss:31.118  MI_loss:2.137
+Epoch: [16][100/1000]	total_loss:-0.199	aug_loss:0.006	 pro_loss:19.114  MI_loss:2.234
+Epoch: [16][200/1000]	total_loss:-0.167	aug_loss:0.010	 pro_loss:35.783  MI_loss:2.122
+Epoch: [16][300/1000]	total_loss:-0.180	aug_loss:0.014	 pro_loss:29.269  MI_loss:2.237
+Epoch: [16][400/1000]	total_loss:-0.200	aug_loss:0.007	 pro_loss:21.612  MI_loss:2.287
+Epoch: [16][500/1000]	total_loss:-0.143	aug_loss:0.007	 pro_loss:45.141  MI_loss:1.945
+Epoch: [16][600/1000]	total_loss:-0.141	aug_loss:0.024	 pro_loss:37.346  MI_loss:2.018
+Epoch: [16][700/1000]	total_loss:-0.152	aug_loss:0.032	 pro_loss:25.190  MI_loss:2.093
+Epoch: [16][800/1000]	total_loss:-0.151	aug_loss:0.019	 pro_loss:35.363  MI_loss:2.045
+Epoch: [16][900/1000]	total_loss:-0.124	aug_loss:0.030	 pro_loss:48.695  MI_loss:2.028
+	plane----------(94.926)
+	bcybl----------(79.827)
+	bus----------(77.441)
+	car----------(54.052)
+	horse----------(92.283)
+	knife----------(90.169)
+	mcyle----------(86.059)
+	person----------(78.550)
+	plant----------(86.481)
+	sktb----------(89.303)
+	train----------(85.623)
+	truck----------(46.017)
+	average:80.061
+epoch = 16,  best_acc1 = 80.061, best_acc1 = 80.347
+Epoch: [17][0/1000]	total_loss:-0.170	aug_loss:0.006	 pro_loss:32.113  MI_loss:2.073
+Epoch: [17][100/1000]	total_loss:-0.178	aug_loss:0.008	 pro_loss:28.525  MI_loss:2.145
+Epoch: [17][200/1000]	total_loss:-0.200	aug_loss:0.005	 pro_loss:21.665  MI_loss:2.269
+Epoch: [17][300/1000]	total_loss:-0.152	aug_loss:0.006	 pro_loss:38.457  MI_loss:1.972
+Epoch: [17][400/1000]	total_loss:-0.163	aug_loss:0.017	 pro_loss:29.455  MI_loss:2.094
+Epoch: [17][500/1000]	total_loss:-0.165	aug_loss:0.004	 pro_loss:38.314  MI_loss:2.072
+Epoch: [17][600/1000]	total_loss:-0.145	aug_loss:0.027	 pro_loss:36.350  MI_loss:2.079
+Epoch: [17][700/1000]	total_loss:-0.158	aug_loss:0.033	 pro_loss:23.831  MI_loss:2.155
+Epoch: [17][800/1000]	total_loss:-0.163	aug_loss:0.017	 pro_loss:27.843  MI_loss:2.078
+Epoch: [17][900/1000]	total_loss:-0.201	aug_loss:0.004	 pro_loss:21.889  MI_loss:2.259
+	plane----------(95.557)
+	bcybl----------(83.022)
+	bus----------(76.716)
+	car----------(50.159)
+	horse----------(92.368)
+	knife----------(91.229)
+	mcyle----------(82.384)
+	person----------(79.375)
+	plant----------(88.085)
+	sktb----------(88.470)
+	train----------(86.615)
+	truck----------(45.872)
+	average:79.988
+epoch = 17,  best_acc1 = 79.988, best_acc1 = 80.347
+Epoch: [18][0/1000]	total_loss:-0.192	aug_loss:0.010	 pro_loss:20.174  MI_loss:2.217
+Epoch: [18][100/1000]	total_loss:-0.170	aug_loss:0.007	 pro_loss:29.126  MI_loss:2.063
+Epoch: [18][200/1000]	total_loss:-0.196	aug_loss:0.004	 pro_loss:25.316  MI_loss:2.254
+Epoch: [18][300/1000]	total_loss:-0.189	aug_loss:0.003	 pro_loss:27.769  MI_loss:2.203
+Epoch: [18][400/1000]	total_loss:-0.159	aug_loss:0.035	 pro_loss:23.472  MI_loss:2.175
+Epoch: [18][500/1000]	total_loss:-0.193	aug_loss:0.004	 pro_loss:22.518  MI_loss:2.202
+Epoch: [18][600/1000]	total_loss:-0.131	aug_loss:0.039	 pro_loss:38.238  MI_loss:2.080
+Epoch: [18][700/1000]	total_loss:-0.161	aug_loss:0.022	 pro_loss:30.006  MI_loss:2.128
+Epoch: [18][800/1000]	total_loss:-0.203	aug_loss:0.003	 pro_loss:17.773  MI_loss:2.234
+Epoch: [18][900/1000]	total_loss:-0.168	aug_loss:0.028	 pro_loss:24.189  MI_loss:2.202
+	plane----------(95.145)
+	bcybl----------(81.036)
+	bus----------(76.397)
+	car----------(53.562)
+	horse----------(92.006)
+	knife----------(93.205)
+	mcyle----------(84.541)
+	person----------(79.350)
+	plant----------(87.074)
+	sktb----------(87.681)
+	train----------(85.623)
+	truck----------(46.377)
+	average:80.166
+epoch = 18,  best_acc1 = 80.166, best_acc1 = 80.347
+Epoch: [19][0/1000]	total_loss:-0.155	aug_loss:0.018	 pro_loss:38.304  MI_loss:2.113
+Epoch: [19][100/1000]	total_loss:-0.156	aug_loss:0.033	 pro_loss:21.781  MI_loss:2.109
+Epoch: [19][200/1000]	total_loss:-0.137	aug_loss:0.025	 pro_loss:42.751  MI_loss:2.046
+Epoch: [19][300/1000]	total_loss:-0.188	aug_loss:0.003	 pro_loss:21.966  MI_loss:2.131
+Epoch: [19][400/1000]	total_loss:-0.177	aug_loss:0.005	 pro_loss:30.066  MI_loss:2.129
+Epoch: [19][500/1000]	total_loss:-0.178	aug_loss:0.014	 pro_loss:25.548  MI_loss:2.171
+Epoch: [19][600/1000]	total_loss:-0.177	aug_loss:0.006	 pro_loss:27.159  MI_loss:2.107
+Epoch: [19][700/1000]	total_loss:-0.182	aug_loss:0.010	 pro_loss:23.525  MI_loss:2.154
+Epoch: [19][800/1000]	total_loss:-0.173	aug_loss:0.011	 pro_loss:27.534  MI_loss:2.112
+Epoch: [19][900/1000]	total_loss:-0.186	aug_loss:0.005	 pro_loss:28.540  MI_loss:2.198
+	plane----------(94.953)
+	bcybl----------(81.295)
+	bus----------(77.356)
+	car----------(50.332)
+	horse----------(91.985)
+	knife----------(90.410)
+	mcyle----------(84.610)
+	person----------(78.800)
+	plant----------(88.745)
+	sktb----------(88.645)
+	train----------(84.962)
+	truck----------(48.089)
+	average:80.015
+epoch = 19,  best_acc1 = 80.015, best_acc1 = 80.347
+Epoch: [20][0/1000]	total_loss:-0.108	aug_loss:0.066	 pro_loss:35.035  MI_loss:2.097
+Epoch: [20][100/1000]	total_loss:-0.146	aug_loss:0.033	 pro_loss:27.377  MI_loss:2.064
+Epoch: [20][200/1000]	total_loss:-0.193	aug_loss:0.010	 pro_loss:20.395  MI_loss:2.240
+Epoch: [20][300/1000]	total_loss:-0.164	aug_loss:0.008	 pro_loss:44.108  MI_loss:2.158
+Epoch: [20][400/1000]	total_loss:-0.163	aug_loss:0.012	 pro_loss:32.886  MI_loss:2.081
+Epoch: [20][500/1000]	total_loss:-0.145	aug_loss:0.016	 pro_loss:35.489  MI_loss:1.966
+Epoch: [20][600/1000]	total_loss:-0.176	aug_loss:0.019	 pro_loss:23.503  MI_loss:2.182
+Epoch: [20][700/1000]	total_loss:-0.152	aug_loss:0.038	 pro_loss:27.057  MI_loss:2.163
+Epoch: [20][800/1000]	total_loss:-0.167	aug_loss:0.006	 pro_loss:33.178  MI_loss:2.053
+Epoch: [20][900/1000]	total_loss:-0.176	aug_loss:0.030	 pro_loss:20.113  MI_loss:2.256
+	plane----------(94.981)
+	bcybl----------(82.216)
+	bus----------(75.522)
+	car----------(51.764)
+	horse----------(92.283)
+	knife----------(92.771)
+	mcyle----------(83.040)
+	person----------(79.700)
+	plant----------(85.931)
+	sktb----------(88.689)
+	train----------(86.544)
+	truck----------(46.035)
+	average:79.956
+epoch = 20,  best_acc1 = 79.956, best_acc1 = 80.347
+Epoch: [21][0/1000]	total_loss:-0.172	aug_loss:0.028	 pro_loss:21.781  MI_loss:2.213
+Epoch: [21][100/1000]	total_loss:-0.175	aug_loss:0.007	 pro_loss:29.790  MI_loss:2.125
+Epoch: [21][200/1000]	total_loss:-0.194	aug_loss:0.006	 pro_loss:19.296  MI_loss:2.195
+Epoch: [21][300/1000]	total_loss:-0.174	aug_loss:0.014	 pro_loss:23.222  MI_loss:2.121
+Epoch: [21][400/1000]	total_loss:-0.077	aug_loss:0.121	 pro_loss:22.510  MI_loss:2.208
+Epoch: [21][500/1000]	total_loss:-0.170	aug_loss:0.006	 pro_loss:36.081  MI_loss:2.125
+Epoch: [21][600/1000]	total_loss:-0.202	aug_loss:0.004	 pro_loss:20.495  MI_loss:2.266
+Epoch: [21][700/1000]	total_loss:-0.148	aug_loss:0.023	 pro_loss:37.243  MI_loss:2.081
+Epoch: [21][800/1000]	total_loss:-0.184	aug_loss:0.007	 pro_loss:29.294  MI_loss:2.196
+Epoch: [21][900/1000]	total_loss:-0.166	aug_loss:0.006	 pro_loss:26.883  MI_loss:1.991
+	plane----------(94.569)
+	bcybl----------(82.043)
+	bus----------(78.124)
+	car----------(52.649)
+	horse----------(92.859)
+	knife----------(93.735)
+	mcyle----------(83.316)
+	person----------(76.800)
+	plant----------(87.514)
+	sktb----------(88.470)
+	train----------(85.977)
+	truck----------(45.963)
+	average:80.168
+epoch = 21,  best_acc1 = 80.168, best_acc1 = 80.347
+Epoch: [22][0/1000]	total_loss:-0.177	aug_loss:0.014	 pro_loss:26.467  MI_loss:2.174
+Epoch: [22][100/1000]	total_loss:-0.185	aug_loss:0.008	 pro_loss:23.467  MI_loss:2.169
+Epoch: [22][200/1000]	total_loss:-0.164	aug_loss:0.015	 pro_loss:25.680  MI_loss:2.049
+Epoch: [22][300/1000]	total_loss:-0.186	aug_loss:0.010	 pro_loss:21.158  MI_loss:2.166
+Epoch: [22][400/1000]	total_loss:-0.177	aug_loss:0.022	 pro_loss:24.379  MI_loss:2.226
+Epoch: [22][500/1000]	total_loss:-0.178	aug_loss:0.010	 pro_loss:23.835  MI_loss:2.119
+Epoch: [22][600/1000]	total_loss:-0.155	aug_loss:0.037	 pro_loss:26.035  MI_loss:2.187
+Epoch: [22][700/1000]	total_loss:-0.193	aug_loss:0.013	 pro_loss:21.409  MI_loss:2.277
+Epoch: [22][800/1000]	total_loss:-0.192	aug_loss:0.009	 pro_loss:21.522  MI_loss:2.221
+Epoch: [22][900/1000]	total_loss:-0.197	aug_loss:0.005	 pro_loss:19.259  MI_loss:2.217
+	plane----------(95.365)
+	bcybl----------(82.245)
+	bus----------(76.567)
+	car----------(52.533)
+	horse----------(92.113)
+	knife----------(93.205)
+	mcyle----------(82.919)
+	person----------(78.425)
+	plant----------(87.074)
+	sktb----------(87.944)
+	train----------(85.647)
+	truck----------(47.765)
+	average:80.150
+epoch = 22,  best_acc1 = 80.150, best_acc1 = 80.347
+Epoch: [23][0/1000]	total_loss:-0.143	aug_loss:0.038	 pro_loss:30.944  MI_loss:2.111
+Epoch: [23][100/1000]	total_loss:-0.174	aug_loss:0.013	 pro_loss:28.306  MI_loss:2.154
+Epoch: [23][200/1000]	total_loss:-0.192	aug_loss:0.007	 pro_loss:23.032  MI_loss:2.217
+Epoch: [23][300/1000]	total_loss:-0.168	aug_loss:0.010	 pro_loss:28.877  MI_loss:2.063
+Epoch: [23][400/1000]	total_loss:-0.165	aug_loss:0.025	 pro_loss:25.650  MI_loss:2.157
+Epoch: [23][500/1000]	total_loss:-0.176	aug_loss:0.012	 pro_loss:19.657  MI_loss:2.072
+Epoch: [23][600/1000]	total_loss:-0.158	aug_loss:0.012	 pro_loss:34.677  MI_loss:2.048
+Epoch: [23][700/1000]	total_loss:-0.140	aug_loss:0.017	 pro_loss:43.963  MI_loss:2.005
+Epoch: [23][800/1000]	total_loss:-0.187	aug_loss:0.006	 pro_loss:22.673  MI_loss:2.157
+Epoch: [23][900/1000]	total_loss:-0.170	aug_loss:0.005	 pro_loss:31.275  MI_loss:2.063
+	plane----------(95.310)
+	bcybl----------(82.935)
+	bus----------(76.290)
+	car----------(48.861)
+	horse----------(92.219)
+	knife----------(93.012)
+	mcyle----------(82.126)
+	person----------(78.775)
+	plant----------(86.766)
+	sktb----------(88.470)
+	train----------(86.048)
+	truck----------(47.999)
+	average:79.901
+epoch = 23,  best_acc1 = 79.901, best_acc1 = 80.347
+Epoch: [24][0/1000]	total_loss:-0.121	aug_loss:0.075	 pro_loss:29.548  MI_loss:2.260
+Epoch: [24][100/1000]	total_loss:-0.171	aug_loss:0.023	 pro_loss:21.144  MI_loss:2.145
+Epoch: [24][200/1000]	total_loss:-0.206	aug_loss:0.003	 pro_loss:16.613  MI_loss:2.264
+Epoch: [24][300/1000]	total_loss:-0.171	aug_loss:0.019	 pro_loss:20.619  MI_loss:2.107
+Epoch: [24][400/1000]	total_loss:-0.198	aug_loss:0.003	 pro_loss:18.282  MI_loss:2.189
+Epoch: [24][500/1000]	total_loss:-0.133	aug_loss:0.054	 pro_loss:26.594  MI_loss:2.130
+Epoch: [24][600/1000]	total_loss:-0.187	aug_loss:0.008	 pro_loss:23.881  MI_loss:2.197
+Epoch: [24][700/1000]	total_loss:-0.183	aug_loss:0.005	 pro_loss:22.496  MI_loss:2.114
+Epoch: [24][800/1000]	total_loss:-0.181	aug_loss:0.006	 pro_loss:23.867  MI_loss:2.107
+Epoch: [24][900/1000]	total_loss:-0.166	aug_loss:0.027	 pro_loss:20.795  MI_loss:2.136
+	plane----------(94.597)
+	bcybl----------(82.158)
+	bus----------(75.864)
+	car----------(51.658)
+	horse----------(92.390)
+	knife----------(92.482)
+	mcyle----------(83.765)
+	person----------(79.700)
+	plant----------(86.810)
+	sktb----------(88.032)
+	train----------(86.166)
+	truck----------(48.991)
+	average:80.218
+epoch = 24,  best_acc1 = 80.218, best_acc1 = 80.347
+Epoch: [25][0/1000]	total_loss:-0.192	aug_loss:0.007	 pro_loss:20.842  MI_loss:2.191
+Epoch: [25][100/1000]	total_loss:-0.166	aug_loss:0.043	 pro_loss:17.483  MI_loss:2.264
+Epoch: [25][200/1000]	total_loss:-0.181	aug_loss:0.003	 pro_loss:31.653  MI_loss:2.153
+Epoch: [25][300/1000]	total_loss:-0.072	aug_loss:0.120	 pro_loss:25.317  MI_loss:2.175
+Epoch: [25][400/1000]	total_loss:-0.164	aug_loss:0.008	 pro_loss:37.409  MI_loss:2.089
+Epoch: [25][500/1000]	total_loss:-0.169	aug_loss:0.010	 pro_loss:32.995  MI_loss:2.122
+Epoch: [25][600/1000]	total_loss:-0.192	aug_loss:0.007	 pro_loss:23.830  MI_loss:2.226
+Epoch: [25][700/1000]	total_loss:-0.138	aug_loss:0.030	 pro_loss:33.683  MI_loss:2.013
+Epoch: [25][800/1000]	total_loss:-0.197	aug_loss:0.005	 pro_loss:22.717  MI_loss:2.245
+Epoch: [25][900/1000]	total_loss:-0.198	aug_loss:0.005	 pro_loss:21.629  MI_loss:2.239
+	plane----------(95.337)
+	bcybl----------(83.655)
+	bus----------(76.013)
+	car----------(52.158)
+	horse----------(92.198)
+	knife----------(91.229)
+	mcyle----------(84.489)
+	person----------(78.750)
+	plant----------(87.382)
+	sktb----------(88.470)
+	train----------(86.355)
+	truck----------(48.414)
+	average:80.371
+epoch = 25,  best_acc1 = 80.371, best_acc1 = 80.371
+Epoch: [26][0/1000]	total_loss:-0.100	aug_loss:0.093	 pro_loss:27.376  MI_loss:2.208
+Epoch: [26][100/1000]	total_loss:-0.207	aug_loss:0.006	 pro_loss:16.839  MI_loss:2.299
+Epoch: [26][200/1000]	total_loss:-0.199	aug_loss:0.005	 pro_loss:17.327  MI_loss:2.216
+Epoch: [26][300/1000]	total_loss:-0.112	aug_loss:0.077	 pro_loss:26.209  MI_loss:2.143
+Epoch: [26][400/1000]	total_loss:-0.169	aug_loss:0.029	 pro_loss:20.617  MI_loss:2.186
+Epoch: [26][500/1000]	total_loss:-0.180	aug_loss:0.004	 pro_loss:30.423  MI_loss:2.149
+Epoch: [26][600/1000]	total_loss:-0.189	aug_loss:0.009	 pro_loss:20.592  MI_loss:2.190
+Epoch: [26][700/1000]	total_loss:-0.161	aug_loss:0.012	 pro_loss:29.363  MI_loss:2.029
+Epoch: [26][800/1000]	total_loss:-0.094	aug_loss:0.078	 pro_loss:37.599  MI_loss:2.099
+Epoch: [26][900/1000]	total_loss:-0.171	aug_loss:0.012	 pro_loss:30.320  MI_loss:2.132
+	plane----------(95.091)
+	bcybl----------(83.511)
+	bus----------(75.842)
+	car----------(49.803)
+	horse----------(91.857)
+	knife----------(92.096)
+	mcyle----------(81.901)
+	person----------(79.075)
+	plant----------(87.228)
+	sktb----------(88.470)
+	train----------(86.355)
+	truck----------(48.107)
+	average:79.945
+epoch = 26,  best_acc1 = 79.945, best_acc1 = 80.371
+Epoch: [27][0/1000]	total_loss:-0.181	aug_loss:0.013	 pro_loss:23.476  MI_loss:2.166
+Epoch: [27][100/1000]	total_loss:-0.163	aug_loss:0.009	 pro_loss:34.681  MI_loss:2.067
+Epoch: [27][200/1000]	total_loss:-0.193	aug_loss:0.013	 pro_loss:20.932  MI_loss:2.267
+Epoch: [27][300/1000]	total_loss:-0.149	aug_loss:0.010	 pro_loss:28.523  MI_loss:1.874
+Epoch: [27][400/1000]	total_loss:-0.151	aug_loss:0.018	 pro_loss:41.753  MI_loss:2.106
+Epoch: [27][500/1000]	total_loss:-0.142	aug_loss:0.034	 pro_loss:24.390  MI_loss:2.006
+Epoch: [27][600/1000]	total_loss:-0.138	aug_loss:0.027	 pro_loss:42.360  MI_loss:2.077
+Epoch: [27][700/1000]	total_loss:-0.183	aug_loss:0.008	 pro_loss:21.764  MI_loss:2.129
+Epoch: [27][800/1000]	total_loss:-0.199	aug_loss:0.010	 pro_loss:17.363  MI_loss:2.268
+Epoch: [27][900/1000]	total_loss:-0.195	aug_loss:0.014	 pro_loss:22.130  MI_loss:2.313
+	plane----------(95.913)
+	bcybl----------(81.237)
+	bus----------(76.162)
+	car----------(52.245)
+	horse----------(92.283)
+	knife----------(90.651)
+	mcyle----------(86.232)
+	person----------(78.250)
+	plant----------(87.228)
+	sktb----------(89.084)
+	train----------(85.600)
+	truck----------(48.468)
+	average:80.279
+epoch = 27,  best_acc1 = 80.279, best_acc1 = 80.371
+Epoch: [28][0/1000]	total_loss:-0.176	aug_loss:0.029	 pro_loss:19.485  MI_loss:2.246
+Epoch: [28][100/1000]	total_loss:-0.164	aug_loss:0.012	 pro_loss:28.760  MI_loss:2.042
+Epoch: [28][200/1000]	total_loss:-0.191	aug_loss:0.023	 pro_loss:16.945  MI_loss:2.314
+Epoch: [28][300/1000]	total_loss:-0.191	aug_loss:0.014	 pro_loss:19.664  MI_loss:2.245
+Epoch: [28][400/1000]	total_loss:-0.200	aug_loss:0.003	 pro_loss:20.277  MI_loss:2.229
+Epoch: [28][500/1000]	total_loss:-0.164	aug_loss:0.015	 pro_loss:25.121  MI_loss:2.040
+Epoch: [28][600/1000]	total_loss:-0.179	aug_loss:0.003	 pro_loss:26.117  MI_loss:2.078
+Epoch: [28][700/1000]	total_loss:-0.172	aug_loss:0.023	 pro_loss:22.264  MI_loss:2.172
+Epoch: [28][800/1000]	total_loss:-0.188	aug_loss:0.007	 pro_loss:23.576  MI_loss:2.187
+Epoch: [28][900/1000]	total_loss:-0.168	aug_loss:0.022	 pro_loss:24.268  MI_loss:2.144
+	plane----------(95.091)
+	bcybl----------(82.532)
+	bus----------(77.377)
+	car----------(52.274)
+	horse----------(91.281)
+	knife----------(91.373)
+	mcyle----------(84.265)
+	person----------(78.525)
+	plant----------(86.371)
+	sktb----------(89.303)
+	train----------(84.278)
+	truck----------(45.746)
+	average:79.868
+epoch = 28,  best_acc1 = 79.868, best_acc1 = 80.371
+Epoch: [29][0/1000]	total_loss:-0.201	aug_loss:0.004	 pro_loss:19.927  MI_loss:2.253
+Epoch: [29][100/1000]	total_loss:-0.102	aug_loss:0.075	 pro_loss:29.777  MI_loss:2.071
+Epoch: [29][200/1000]	total_loss:-0.185	aug_loss:0.006	 pro_loss:26.158  MI_loss:2.169
+Epoch: [29][300/1000]	total_loss:-0.144	aug_loss:0.016	 pro_loss:38.712  MI_loss:1.979
+Epoch: [29][400/1000]	total_loss:-0.205	aug_loss:0.003	 pro_loss:18.967  MI_loss:2.272
+Epoch: [29][500/1000]	total_loss:-0.140	aug_loss:0.055	 pro_loss:22.175  MI_loss:2.167
+Epoch: [29][600/1000]	total_loss:-0.175	aug_loss:0.011	 pro_loss:24.916  MI_loss:2.115
+Epoch: [29][700/1000]	total_loss:-0.146	aug_loss:0.033	 pro_loss:32.387  MI_loss:2.109
+Epoch: [29][800/1000]	total_loss:-0.167	aug_loss:0.017	 pro_loss:25.185  MI_loss:2.092
+Epoch: [29][900/1000]	total_loss:-0.167	aug_loss:0.024	 pro_loss:27.641  MI_loss:2.183
+	plane----------(95.036)
+	bcybl----------(82.417)
+	bus----------(78.657)
+	car----------(50.370)
+	horse----------(92.155)
+	knife----------(91.952)
+	mcyle----------(84.489)
+	person----------(79.075)
+	plant----------(87.382)
+	sktb----------(88.558)
+	train----------(86.827)
+	truck----------(44.845)
+	average:80.147
+epoch = 29,  best_acc1 = 80.147, best_acc1 = 80.371
+best_acc1 = 80.371
+	plane----------(95.337)
+	bcybl----------(83.655)
+	bus----------(76.013)
+	car----------(52.158)
+	horse----------(92.198)
+	knife----------(91.229)
+	mcyle----------(84.489)
+	person----------(78.750)
+	plant----------(87.382)
+	sktb----------(88.470)
+	train----------(86.355)
+	truck----------(48.414)
+	average:80.371
+test_accuracy = 80.371
